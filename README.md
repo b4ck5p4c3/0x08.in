@@ -9,4 +9,4 @@
 Правила ведения дискуссий, принятия PR находятся в разработке и обсуждаются в [issue #2](https://github.com/b4ck5p4c3/wiki/issues/2)
 
 
-[test page](/test_page.md)
+[test_page](/test_page)
