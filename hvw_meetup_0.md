@@ -5,7 +5,7 @@
 
 ## Доклады
 
-**Что такое hardware hacking и как им обмазаться**
+**Что такое hardware hacking, и как им обмазаться**
 _Aanper_
 _Zaf0d_
 
