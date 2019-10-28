@@ -1,5 +1,5 @@
 # Страница мероприятий хакспейса B4CKSPC4CE
 
-* private hardware hackaton по сборке столов (todo: add page)
-* 0-day event (todo: add page)
-* HVW embedded meetup (todo: add page)
+* 19.10.19: private hardware hackaton по сборке столов
+* 27.10.19: 0-day event
+* 2.11.19: HVW embedded meetup
