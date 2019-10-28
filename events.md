@@ -1,4 +1,4 @@
-# Страница мероприятий хакспейса B4CKSPC4CE
+# Мероприятия хакспейса B4CKSPC4CE
 
 * 19.10.19: private hardware hackaton по сборке столов
 * 27.10.19: 0-day event
