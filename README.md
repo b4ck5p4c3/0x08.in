@@ -11,3 +11,8 @@
 ## Мероприятия
 
 [Страница мероприятий](/events.md)
+
+## Правила публикации сообщений в информационных каналах B4CKSPC4CE
+
+1. На канале в telegram [@b4ck5p4c3](tg://resolve/?domain=b4ck5p4c3), сайте [0x08.in](https://0x08.in), группах [vk](https://vk.com/b4cksp4ce), facebook, instagram — публикуется только информация, непосредственно относящаяся к событиям и проектам хакспейса.
+2. В twitter [@b4cksp4ce](https://twitter.com/b4cksp4ce) и канале [@backspace_chat](tg://resolve/?domain=backspace_chat) — допустимы любые сообщения и репосты, не нарушающие правил сообщества, кроме `<blacklist>`
