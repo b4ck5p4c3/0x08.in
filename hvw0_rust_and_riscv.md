@@ -4,4 +4,4 @@ _[Disasm](https://github.com/Disasm)_
 Доклад посвящён применению языка Rust для embedded-разработки.
 В качестве целевой архитектуры рассматривается RISC-V и её реализации как в чипах, так и на FPGA.
 
-[Презентация](hvw0_rust_and_riscv.pdf)
+[Презентация](/hvw0_rust_and_riscv.pdf)
