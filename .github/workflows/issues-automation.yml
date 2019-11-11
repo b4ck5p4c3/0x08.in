@@ -2,7 +2,7 @@
 name: 'Issues automation'
 on:
   schedule:
-  - cron: '0/3 * * * *'
+  - cron: '*/3 * * * *'
 jobs:
   issues_automation:
     name: 'Issues automation'
