@@ -5,3 +5,4 @@
 * 29.10.19: [Мастер-класс по совместному проектированию верстака](/fusion_hackathon)
 * 02.11.19: [HVW embedded meetup #0](/hvw_meetup_0)
 * 09.11.19: [СКУД Hackathon](/acs_hackathon)
+* 22.11.19: [Киносеанс: "Все создания, добро пожаловать! / All Creatures Welcome" RUS SUB](/mps/mps0_AllCreaturesWelcome)
