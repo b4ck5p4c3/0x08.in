@@ -12,4 +12,8 @@
 * 09.11.19: [СКУД Hackathon](/acs_hackathon)
 * 22.11.19: [Киносеанс: "Все создания, добро пожаловать! / All Creatures Welcome" RUS SUB](/mps/mps0_AllCreaturesWelcome)
 
+## Декабрь 2019
+
+* 07.12.19: [Как войти в разработку под zx-spectrum](/spectrum_mc_0)
+
 # Планируемые мероприятия
