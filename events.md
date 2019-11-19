@@ -11,10 +11,12 @@
 * 02.11.19: [HVW embedded meetup #0](/hvw_meetup_0)
 * 09.11.19: [СКУД Hackathon](/acs_hackathon)
 * 22.11.19: [Киносеанс: "Все создания, добро пожаловать! / All Creatures Welcome" RUS SUB](/mps/mps0_AllCreaturesWelcome)
+* 30.11.19: [HVW embedded meetup #1](/hvw_meetup_1)
 
 ## Декабрь 2019
 
 * 07.12.19: [Как войти в разработку под zx-spectrum](/spectrum_mc_0)
+* 14.12.19: Криптопати
 
 # Планируемые мероприятия
 
