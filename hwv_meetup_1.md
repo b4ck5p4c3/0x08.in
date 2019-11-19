@@ -1,4 +1,4 @@
-# Hardware village / embedded meetup #1
+# Hardware village / embedded meetup #1: ошибки и тестирование
 
 _30.11.19 16:00_
 
@@ -10,3 +10,8 @@ _Иван Ларионов, Третий пин, генеральный дире
 ### Как разработать и произвести 100к устройств и не попасть в психушку
 
 _Алексей Гордейчик_
+
+
+## Регистрация
+
+[b4cksp4ce.timepad.ru](https://b4cksp4ce.timepad.ru/event/1123140/)
