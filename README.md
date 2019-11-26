@@ -7,7 +7,7 @@
 **Приходите в гости** в то время, когда мы открыты: 
 
 * предварительное расписание работы можно увидеть в [календаре](https://calendar.google.com/calendar/embed?src=n0oev7vtqntpok3phdbb48cvu0%40group.calendar.google.com&ctz=Europe%2FMoscow)
-* но лучше написать нам в чат [@backspace_chat](tg://resolve/?domain=backspace_chat) или через [форму](https://docs.google.com/forms/d/e/1FAIpQLSeNVJzCU2b7vwXdRap9acLUVR4xbUCTNjxjuXREiQcWEPdADQ/formResponse) и уточнить, когда кто-то из участников будет на месте.
+* но лучше написать нам в чат [@backspace_chat](tg://resolve/?domain=backspace_chat) на почту [info@0x08.in](mailto:info@0x08.in) или через [форму](https://docs.google.com/forms/d/e/1FAIpQLSeNVJzCU2b7vwXdRap9acLUVR4xbUCTNjxjuXREiQcWEPdADQ/formResponse) и уточнить, когда кто-то из участников будет на месте.
 * Мы регулярно проводим мероприятия, [страница мероприятий](/events.md).
 
 Если вы хотите стать участником или резидентом, у нас есть [страница с информацией для участников](participants.md).
