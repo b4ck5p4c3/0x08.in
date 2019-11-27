@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+html, body {
+  background: black;
+}
+
 nav {
   width: 100%;
   display: flex;
