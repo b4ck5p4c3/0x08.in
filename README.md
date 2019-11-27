@@ -4,10 +4,10 @@
 
 Мы расположены на черной речке ([Ланское шоссе, 14к1](https://yandex.ru/maps/-/CGeDiS3Y)) и занимаем несколько комнат общей площадью 84 м². У нас есть оборудование: для ручного труда – механический инструмент, материалы. Для пайки и разработки – удобные рабочие столы, приборы, расходники и многое другое.
 
-**Приходите в гости** в то время, когда мы открыты: 
+### Мы открыты, можно приходить в гости, работать и творить:
 
-* предварительное расписание работы можно увидеть в [календаре](https://calendar.google.com/calendar/embed?src=n0oev7vtqntpok3phdbb48cvu0%40group.calendar.google.com&ctz=Europe%2FMoscow)
-* но лучше написать нам в чат [@backspace_chat](tg://resolve/?domain=backspace_chat) на почту [info@0x08.in](mailto:info@0x08.in) или через [форму](https://docs.google.com/forms/d/e/1FAIpQLSeNVJzCU2b7vwXdRap9acLUVR4xbUCTNjxjuXREiQcWEPdADQ/formResponse) и уточнить, когда кто-то из участников будет на месте.
+* предварительное расписание работы можно увидеть в [календаре](https://calendar.google.com/calendar/embed?src=n0oev7vtqntpok3phdbb48cvu0%40group.calendar.google.com&ctz=Europe%2FMoscow)…
+* …но лучше написать нам в чат [@backspace_chat](tg://resolve/?domain=backspace_chat) на почту [info@0x08.in](mailto:info@0x08.in) или через [форму](https://docs.google.com/forms/d/e/1FAIpQLSeNVJzCU2b7vwXdRap9acLUVR4xbUCTNjxjuXREiQcWEPdADQ/formResponse) и уточнить, когда кто-то из участников будет на месте.
 * Мы регулярно проводим мероприятия, [страница мероприятий](/events.md).
 
 Если вы хотите стать участником или резидентом, у нас есть [страница с информацией для участников](participants.md).
