@@ -1,0 +1,18 @@
+    <header>
+      <div class="container">
+        <section style="display: flex;">
+          <nav class="navbar">
+            <span>
+              <a href="https://0x08.in">./B4CKSP4CE</a>/<a href="{{ '/' | relative_url }}">{{ site.title}}</a>
+            </span>
+            <img src="/img/b4_main_cut.jpg" />
+            <ul class="nav-links">
+            {% for link in site.data.routes.nav-bar %}
+              <li class="nav-item"><a href="{{ link.url }}"> {{ link.title }}</a></li>
+            {% endfor %}
+              <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </header>

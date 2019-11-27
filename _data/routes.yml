@@ -1,0 +1,8 @@
+main:
+        - title: "./B4CKSP4CE/"
+          url: "https://0x08.in"
+nav-bar:
+        - title: "События"
+          url: /events
+        - title: "Участникам"
+          url: /participants
