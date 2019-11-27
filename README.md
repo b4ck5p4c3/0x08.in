@@ -28,12 +28,12 @@ _Подробнее на странице [Принципы сообщества
 * Запрещено умирать
 * Финансовая независимость
 
-## Социалки и ссылки:
+## Социалки, ссылки и контакты:
 
-Telegram-канал: [@b4ck5p4c3](tg://resolve/?domain=b4ck5p4c3)
-
-Twitter: [@b4cksp4ce](https://twitter.com/b4cksp4ce)
-
-GitHub: [b4ck5p4c3](https://github.com/b4ck5p4c3)
-
-vk: [/b4cksp4ce](https://vk.com/b4cksp4ce)
+* Telegram-канал: [@b4ck5p4c3](tg://resolve/?domain=b4ck5p4c3)
+* Twitter: [@b4cksp4ce](https://twitter.com/b4cksp4ce)
+* GitHub: [b4ck5p4c3](https://github.com/b4ck5p4c3)
+* vk: [/b4cksp4ce](https://vk.com/b4cksp4ce)
+* telegram-чат [@backspace_chat](tg://resolve/?domain=backspace_chat)
+* почта [info@0x08.in](mailto:info@0x08.in) 
+* [форма обратной связи](https://docs.google.com/forms/d/e/1FAIpQLSeNVJzCU2b7vwXdRap9acLUVR4xbUCTNjxjuXREiQcWEPdADQ/formResponse)
