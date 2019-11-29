@@ -22,7 +22,7 @@
 
 ## Трекер задач и дискуссий
 
-Все задачи и дискуссии хакспейса ведутся в [issues к репозиторию wiki](https://github.com/b4ck5p4c3/wiki/issues).
+Все задачи и дискуссии хакспейса ведутся в [issues к репозиторию wiki](https://github.com/b4ck5p4c3/0x08.in/issues).
 
 Рекомендуем ознакомиться с [правилами ведения issues](/issue_rules.md)
 
