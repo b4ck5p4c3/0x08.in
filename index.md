@@ -46,4 +46,3 @@ _Подробнее на странице [Принципы сообщества
 * почта [info@0x08.in](mailto:info@0x08.in) 
 * [форма обратной связи](https://docs.google.com/forms/d/e/1FAIpQLSeNVJzCU2b7vwXdRap9acLUVR4xbUCTNjxjuXREiQcWEPdADQ/formResponse)
 
-## [FAQ](/faq.md)
