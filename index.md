@@ -48,4 +48,4 @@ _Подробнее на странице [Принципы сообщества
 
 ## [FAQ](/faq.md)
 
-<sub><sup>Нашли ошибку? [Пишите](mailto:info@0x08.in) или [https://github.com/b4ck5p4c3/0x08.in](предложите изменение)!</sup></sub>
+<sub><sup>Нашли ошибку? [Пишите](mailto:info@0x08.in) или [предложите изменение](https://github.com/b4ck5p4c3/0x08.in)!</sup></sub>
