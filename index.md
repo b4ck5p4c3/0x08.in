@@ -17,7 +17,9 @@ title: index
 * если вы собираетесь прийти, лучше написать нам в чат [@backspace_chat](tg://resolve/?domain=backspace_chat), на почту [info@0x08.in](mailto:info@0x08.in) или через [форму](https://docs.google.com/forms/d/e/1FAIpQLSeNVJzCU2b7vwXdRap9acLUVR4xbUCTNjxjuXREiQcWEPdADQ/formResponse) и уточнить, когда кто-то из участников будет на месте.
 * Мы регулярно проводим мероприятия, [страница мероприятий](/events.md).
 
-Если вы хотите стать участником или резидентом, у нас есть [страница с информацией для участников](participants.md).
+[Информация для участников, резидентов и желающих присоединиться](/participants.md).
+
+[Информация о возможностях сотрудничества для организаций](/partnership.md).
 
 ### Мы принимаем донаты
 
@@ -46,3 +48,4 @@ _Подробнее на странице [Принципы сообщества
 * почта [info@0x08.in](mailto:info@0x08.in) 
 * [форма обратной связи](https://docs.google.com/forms/d/e/1FAIpQLSeNVJzCU2b7vwXdRap9acLUVR4xbUCTNjxjuXREiQcWEPdADQ/formResponse)
 
+<sub><sup>Нашли ошибку? [Пишите](mailto:info@0x08.in) или [предложите изменение](https://github.com/b4ck5p4c3/0x08.in)!</sup></sub>
