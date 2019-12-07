@@ -41,6 +41,11 @@ _Подробнее на странице [Принципы сообщества
 * Twitter: [@b4cksp4ce](https://twitter.com/b4cksp4ce)
 * GitHub: [b4ck5p4c3](https://github.com/b4ck5p4c3)
 * vk: [/b4cksp4ce](https://vk.com/b4cksp4ce)
+* matrix-чат [#b4ck5p4c3:matrix.org](https://matrix.to/#/#b4ck5p4c3:matrix.org)
 * telegram-чат [@backspace_chat](tg://resolve/?domain=backspace_chat)
 * почта [info@0x08.in](mailto:info@0x08.in) 
 * [форма обратной связи](https://docs.google.com/forms/d/e/1FAIpQLSeNVJzCU2b7vwXdRap9acLUVR4xbUCTNjxjuXREiQcWEPdADQ/formResponse)
+
+## [FAQ](/faq.md)
+
+<sub><sup>Нашли ошибку? [Пишите](mailto:info@0x08.in) или [предложите изменение](https://github.com/b4ck5p4c3/0x08.in)!</sup></sub>
