@@ -1,7 +1,7 @@
 ---
 
 layout: index
-title: index
+title: Хакспейс в Санкт-Петербурге
 
 ---
 
