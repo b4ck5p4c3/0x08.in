@@ -5,7 +5,7 @@ a {
 }
 
 h2,h3,h4,h5,h6 {
-  color: #4A8782;
+  color: #50CF6F;
 }
 
 hr {
@@ -58,6 +58,8 @@ nav .navbar li {
 }
 
 nav .navbar li a {
+  border-bottom: 2px solid #fefefe;
   color: inherit;
+  display: inline-block;
   text-decoration: none;
 }
