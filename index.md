@@ -15,11 +15,11 @@ title: index
 
 * предварительное расписание работы можно увидеть в [календаре](https://calendar.google.com/calendar/embed?src=n0oev7vtqntpok3phdbb48cvu0%40group.calendar.google.com&ctz=Europe%2FMoscow)…
 * если вы собираетесь прийти, лучше написать нам в чат [@backspace_chat](tg://resolve/?domain=backspace_chat), на почту [info@0x08.in](mailto:info@0x08.in) или через [форму](https://docs.google.com/forms/d/e/1FAIpQLSeNVJzCU2b7vwXdRap9acLUVR4xbUCTNjxjuXREiQcWEPdADQ/formResponse) и уточнить, когда кто-то из участников будет на месте.
-* Мы регулярно проводим мероприятия, [страница мероприятий](/events.md).
+* Мы регулярно проводим мероприятия, [страница мероприятий](/events.html).
 
-[Информация для участников, резидентов и желающих присоединиться](/participants.md).
+[Информация для участников, резидентов и желающих присоединиться](/participants.html).
 
-[Информация о возможностях сотрудничества для организаций](/partnership.md).
+[Информация о возможностях сотрудничества для организаций](/partnership.html).
 
 ### Мы принимаем донаты
 
@@ -32,7 +32,7 @@ title: index
 
 ### Принципы сообщества
 
-_Подробнее на странице [Принципы сообщества](/community_principles.md)_
+_Подробнее на странице [Принципы сообщества](/community-principles.html)_
 
 * Be excellent to each other
 * Do-ocracy

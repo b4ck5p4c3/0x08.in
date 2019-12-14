@@ -1,7 +1,10 @@
-# Hardware village / embedded meetup #1: ошибки и тестирование
+---
 
-_30.11.19 16:00_
+layout: event
+title: "HVW / Embedded Meetup #1 : ошибки и тестирование"
+date: 30.11.2019 16:00
 
+---
 ## Доклады
 
 ### Ошибки: делиться, терпеть, избегать

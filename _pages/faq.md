@@ -1,3 +1,10 @@
+---
+
+layout: page
+title: FAQ
+description: Ответы на частозадаваемые вопросы в B4CKSP4CE
+
+---
 # FAQ
 
 ## Мероприятия

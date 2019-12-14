@@ -1,3 +1,10 @@
+---
+
+layout: page
+title: Принципы сообщества
+description: Принципы сообщества хакспейса B4CKSP4CE
+
+---
 # Принципы сообщества B4CKSP4CE
 
 ## Be excellent to each other
