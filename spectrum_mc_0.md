@@ -6,8 +6,8 @@ _07.12.19 16:00_
 
 На первом семинаре "Как войти в разработку под ZX-Spectrum"  Петр aka [errorsoft](https://github.com/errorcalc) расскажет как настроить окружение для разработки под Спектрум (ассемблер, редактор, эмулятор), про структуру памяти и научит участников создавать простые атрибутные эффекты.
 
-Исходники будут выложены на [GitHub](https://github.com/ChaosConstructions).
+Исходники и презентация доступны на [GitHub](https://github.com/errorcalc/zx_starter_pack).
 
-Будет онлайн-трансляция и видеозапись.
+Видео демы доступно здесь: https://youtu.be/FOgBNG-E-T0
 
-Для очного участия требуется [регистрация](https://www.meetup.com/Embedded-Systems-Meetup-St-Petersburg/events/266890143/)
+[Ссылка на регистрацию](https://www.meetup.com/Embedded-Systems-Meetup-St-Petersburg/events/266890143/) (мероприятие закончилось).
