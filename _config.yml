@@ -9,3 +9,7 @@ collections:
   events:
     output: true
     permalink: /events/:name
+exclude:
+  - README.md
+  - Dockerfile
+  - CNAME

@@ -5,14 +5,15 @@ a {
 }
 
 h2,h3,h4,h5,h6 {
-  color: #50CF6F;
+  /* color: #50CF6F; */
+  color: #F5E734;
 }
 
 hr {
   border: 1px solid #4A8782;
 }
 
-li {
+ul li {
   list-style: "— ";
   margin-bottom: +1em;
 }
