@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <title>{{ page.title }} &bull; {{ site.title }}</title>
+    {% if page.event_description %}
+    <meta name="description" content="{{ page.event_description }}">
+    {% else %}
+    <meta name="description" content='Событие {{ page.title }} в хакспейсе B4CKSP4CE'>
+    {% endif %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "{{ page.title }}",
+        "startDate": "{{ page.date |date: "%Y-%m-%dT%H:%M:00" }}",
+        {% if page.event_description %}"description": "{{ page.event_description }}", {% endif %}
+        {% if page.end_date %}"endDate": "{{ page.end_date |date: "%Y-%m-%dT%H:%M:00" }}", {% endif %}
+        "location": {
+          "@type": "Place",
+          "name": "B4CKSP4CE",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Lanskoye Shosse, 14",
+            "addressLocality": "St. Petersburg",
+            "postalCode": "197343",
+            "addressCountry": "RU"
+          }
+        }
+      }
+      </script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="/"><img src="/assets/backspace-white.svg" alt="Backspace logo"></a>
+        <ul class="navbar">
+          {% for link in site.data.routes.nav-bar %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <main class="content-wrap">
+        <article>
+          <h1>{{ page.title }}</h1>
+          <b>{{ page.date| date: "%d.%m.%Y %H:%M" }}</b>
+          <hr>
+          <section>{{ content }}</section>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
+

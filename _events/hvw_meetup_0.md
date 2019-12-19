@@ -1,8 +1,10 @@
-# Hardware village / embedded meetup #0
+---
 
-2.11.19
-15:30
+layout: event
+title: "HVW / Embedded Meetup #0"
+date: 02.11.2019 15:30
 
+---
 ## Доклады
 
 ### Что такое hardware hacking, и как им обмазаться
@@ -11,23 +13,23 @@ _Zaf0d_
 
 Узнаем что это и зачем этим заниматься, посмотрим на минимальный набор, необходимый для того, чтобы начать исследовать железо.
 
-[Презентация](/hvw0_hardwarehacking.pdf)
+[Презентация](/static/slides/hvw0/hvw0_hardwarehacking.pdf)
 
 ### Loss, noise and two Friis equations
 _Юшков Иван, embedded engineer_
 
 Доклад посвящён основам СВЧ. Рассмотрены темы расчёта RF-бюджета линии, коэффициента шума и согласования цепей.
 
-[**Презентация (odp)**](/hwv0_loss_and_noise.odp)
+[**Презентация (odp)**](/static/slides/hvw0//hwv0_loss_and_noise.odp)
 
-[**Презентация (pdf)**](/hwv0_loss_and_noise.pdf)
+[**Презентация (pdf)**](/static/slides/hvw0//hwv0_loss_and_noise.pdf)
 
 ### Особенности проектирования систем сбора данных при работе с биологическими объектами.
 _Арман, магистрант МГТУ имени Баумана._
 
 Одна из ключевых задач в медицине и человеко-машинных интерфейсах — регистрация различных параметров, например, активности мышц. Узнаем, на что следует обратить внимание при работе с биологическими сигналами, и почему кроме познаний в электронике и антенной технике при проектировании важно понимать биофизику исследуемых процессов.
 
-[Презентация](/hwv_0_medInstrumentationDesign.pdf)
+[Презентация](/static/slides/hvw0//hwv_0_medInstrumentationDesign.pdf)
 
 ### Применение Rust для архитектуры RISC-V
 _[Disasm](https://github.com/Disasm)_
@@ -35,4 +37,4 @@ _[Disasm](https://github.com/Disasm)_
 Доклад посвящён применению языка Rust для embedded-разработки.
 В качестве целевой архитектуры рассматривается RISC-V и её реализации как в чипах, так и на FPGA.
 
-[Презентация](/hvw0_rust_and_riscv.pdf)
+[Презентация](/static/slides/hvw0//hvw0_rust_and_riscv.pdf)
