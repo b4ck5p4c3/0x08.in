@@ -1,7 +1,10 @@
-# Киносеанс: "Все создания, добро пожаловать! / All Creatures Welcome" (rus sub)
-_22.11.19 19:30_
+---
 
+layout: event
+title: 'Киносеанс: "Все создания, добро пожаловать! / All Creatures Welcome"'
+date: 22.11.2019 19:30
 
+---
 Пятничным вечером соберёмся вместе, чтобы посмотреть документальный фильм Сандры Тростел о Chaos Computer Club — крупнейшей в европе хакерской ассоциации и движении.
 
 Подробнее про фильм: [sandratrostel.de/projects/acw/](https://sandratrostel.de/projects/acw/)

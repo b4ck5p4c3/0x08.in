@@ -1,2 +1,15 @@
-theme: jekyll-theme-hacker
 title: "B4CKSP4CE"
+source: .
+lang: ru-RU
+future: true
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  events:
+    output: true
+    permalink: /events/:name
+exclude:
+  - README.md
+  - Dockerfile
+  - CNAME

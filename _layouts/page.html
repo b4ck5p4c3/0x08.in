@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/assets/css/app.css">
-    <title>{{ site.title }}</title>
-    <meta name="description" content="Место для тех, кто интересуется разработкой ПО, железа, искусством и DIY.">
+    <title>{{ page.title }} &bull; {{ site.title }}</title>
   </head>
   <body>
     <div class="container">
@@ -18,9 +17,9 @@
           {% endfor %}
         </ul>
       </nav>
-      <main class="content-wrap">
+      <section class="content-wrap">
         {{ content }}
-      </main>
+      </section>
     </div>
   </body>
 </html>

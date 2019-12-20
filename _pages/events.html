@@ -1,0 +1,17 @@
+---
+
+layout: page
+title: События
+description: События хакспейса B4CKSP4CE
+
+---
+<h1>События хакспейса</h1>
+{% assign postsByYearMonth = site.events | group_by_exp:"event", "event.date | date: '%Y %B'" | reverse  %}
+{% for yearMonth in postsByYearMonth %}
+  <h3>{{ yearMonth.name }}</h3>
+    <ul>
+      {% for event in yearMonth.items %}
+        <li>{{ event.date| date: '%a %d, %H:%M' }} <a href="{{ event.url }}">{{ event.title }}</a></li>
+      {% endfor %}
+    </ul>
+{% endfor %}
