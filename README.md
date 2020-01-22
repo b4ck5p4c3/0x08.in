@@ -47,3 +47,5 @@ cd 0x08.in
 docker build . -t b4cksp4ce/ghpages
 docker run --rm -p 8080:4000 -v `pwd`:/jekyll b4cksp4ce/ghpages
 ```
+
+Сайт будет доступен по адресу http://localhost:8080/
