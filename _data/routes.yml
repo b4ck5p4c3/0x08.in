@@ -8,3 +8,5 @@ nav-bar:
           url: /events
         - title: "Участникам"
           url: /participants
+        - title: "Контакты"
+          url: /contacts
