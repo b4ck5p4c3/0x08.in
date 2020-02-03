@@ -1,7 +1,7 @@
 ---
 
 layout: event
-title: Art into realty
+title: Mediaelectromechanical workshop
 date: 06.02.2020 19:00
 
 ---
