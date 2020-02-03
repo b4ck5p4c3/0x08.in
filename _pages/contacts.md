@@ -8,7 +8,7 @@ title: Контакты
 ## Физическое расположение
 Хакспейс расположен в **г. Санкт-Петербург, метро Черная Речка, [Ланское шоссе, 14к1](https://yandex.ru/maps/org/bekspeys/29206101690/)** и занимает несколько комнат общей площадью 84м².
 
-<p><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7bcaf75f1a7fb040982eb123ecdace6ebf3cd4f516e56f2f882532659500d190&amp;width=100%25&amp;height=572&amp;lang=ru_RU&amp;scroll=false"></script></p>
+<iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=29206101690" width="100%" height="560" frameborder="0"></iframe>
 <sub> [Вход на статической картинке](http://0x08.in/img/map.jpg)</sub>
 
 
