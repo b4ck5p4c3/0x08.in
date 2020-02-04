@@ -14,7 +14,7 @@ _Михаил Чешков, kviver team_
 Rust, C, JS, слившиеся в едином порыве. Возможно, доклад будет читаться из докер-контейнера.
 
 ### Embedded SW & DevOps: Suffer Well.
-_Максим_
+_(Максим)[https://github.com/approximatenumber], configuration manager, ARRIVAL_
 
 * автоматизация сборки, тестирования и деплоя, решение проблем
 * управление зависимостями
