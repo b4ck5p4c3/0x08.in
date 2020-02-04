@@ -1,7 +1,7 @@
 ---
 
 layout: event
-title: HWV meetup 2
+title: HVW / Embedded Meetup #2
 date: 08.02.2020 16:00
 
 ---
