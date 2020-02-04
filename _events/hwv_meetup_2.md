@@ -19,7 +19,7 @@ _[Максим](https://github.com/approximatenumber), configuration manager, AR
 Как автоматизация и DevOps-практики улучшают жизнь проекта и разработчика, и что делать, если для успешной сборки и запуска недостаточно сделать `docker run`, попивая смуззи.
 
 ### 1985 wild demo: как это было
-_Андрей, kviver team [@shitsch]((tg://resolve/?domain=shitsch)_
+_ Андрей, kviver team [@shitsch]((tg://resolve/?domain=shitsch) _
 
 Полгода назад я участвовал в Chaos Constructions с демо на осциллографе. Как это было и что из этого получилось. Много React, немного webassembly и JS, STM32 и, конечно же, ОСЦИЛЛОООГРАФ!
 
