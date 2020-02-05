@@ -6,6 +6,10 @@ date: 06.02.2020 19:00
 
 ---
 
+![promo](/img/mediaem_promo.gif "game of life on the fluepdot. By alg & fluepke")
+
+[B4CKSP4CE](https://0x08.in/) и [PLGN](https://www.instagram.com/plgnlab/) представляют:
+
 Андрей [@сoreglitch](tg://resolve/?domain=сoreglitch) и Саша [@tripwire](tg://resolve/?domain=tripwire) проводят экспресс-курс по соединению Media-art, электроники и механики!
 
 # В планах курса:
