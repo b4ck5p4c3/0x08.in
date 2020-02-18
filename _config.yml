@@ -13,3 +13,8 @@ exclude:
   - README.md
   - Dockerfile
   - CNAME
+plugins:
+  - jekyll-feed
+feed:
+  collections:
+    - events
