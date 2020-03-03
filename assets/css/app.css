@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700&display=swap&subset=cyrillic');
 
 a { 
   color: #66AFE3;
+}
+
+h2, h3 {
+  margin-top: 40px;
 }
 
 h2,h3,h4,h5,h6 {
@@ -10,12 +14,12 @@ h2,h3,h4,h5,h6 {
 }
 
 hr {
-  border: 1px solid #4A8782;
+  /* border: 1px solid #4A8782; */
 }
 
 ul li {
-  list-style: "— ";
-  margin-bottom: +1em;
+  /* list-style: "— ";*/
+  margin-bottom: +1em; 
 }
 
 body {

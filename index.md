@@ -36,6 +36,3 @@ B4CKSP4CE (от *backspace*) — [хакерспейс](https://ru.wikipedia.org
 * Не претесняй других
 * Запрещено умирать
 * Финансовая независимость
-
-
-<sub><sup>Нашли ошибку? [Пишите](mailto:info@0x08.in) или [предложите изменение](https://github.com/b4ck5p4c3/0x08.in)!</sup></sub>
