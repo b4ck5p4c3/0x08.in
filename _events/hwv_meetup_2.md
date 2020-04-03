@@ -18,15 +18,21 @@ _[Максим](https://github.com/approximatenumber), configuration manager, AR
 
 Как автоматизация и DevOps-практики улучшают жизнь проекта и разработчика, и что делать, если для успешной сборки и запуска недостаточно сделать `docker run`, попивая смуззи.
 
+Видеозапись доклада на [Youtube](https://www.youtube.com/watch?v=Re06ffCI2m8)
+
 ### 1985 wild demo: как это было
 _Андрей, kviver team, [@shitsch](tg://resolve/?domain=shitsch)_
 
 Полгода назад я участвовал в Chaos Constructions с демо на осциллографе. Как это было и что из этого получилось. Много React, немного webassembly и JS, STM32 и, конечно же, ОСЦИЛЛОООГРАФ!
 
-## Open call!
+Видеозапись наших игр с оциллографом на [Youtube](https://www.youtube.com/watch?v=Muo5s_kyqq4)
 
-После докладов мы собираемся за круглым (прямоугольным) столом, обмениваемся опытом и ковыряем железки.
+Оригинальная демка: [1984](https://www.youtube.com/watch?v=GLiaxK9qrqc)
 
-Предлагайте свои идеи активности для круглого стола! Эксплуатация уязвимостей, запуск отладочных плат, демонстрация технологий, ковыряние железок — все, что подходит духу Hardware village!
+Исходники: [github](https://github.com/aanper/CC1895)
 
-Желательно, чтобы вы сами представляли, что нужно для проведения активности.
+## Фото с мероприятия
+
+![Oscilloscope emulation](/static/img/hwv2/osc.jpg)
+
+![Devops](/static/img/hwv2/devops.jpg)
