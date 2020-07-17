@@ -2,12 +2,10 @@ main:
         - title: "./B4CKSP4CE/"
           url: "https://0x08.in"
 nav-bar:
-        - title: "FAQ"
-          url: /faq
+        - title: "wiki"
+          url: /wiki
         - title: "События"
           url: /events
-        - title: "Участникам"
-          url: /participants
         - title: "Контакты"
           url: /contacts
         - title: "Календарь"
