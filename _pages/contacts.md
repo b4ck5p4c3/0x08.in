@@ -20,7 +20,7 @@ title: Контакты
 
 <img src="/img/telegram.png" width="20" class="img-responsive"> Бот [@b4cksp4ce_bot](tg://resolve/?domain=b4cksp4ce_bot)
 
-<img src="/img/telegram.png" width="20" class="img-responsive"> Telegram-чат [@backspace_chat](tg://resolve/?domain=backspace_chat)
+<img src="/img/telegram.png" width="20" class="img-responsive"> Telegram-чат [@b4cksp4ce_chat](tg://resolve/?domain=b4cksp4ce_chat)
 
 <img src="/img/twitter.png" width="20" class="img-responsive"> Twitter: [@b4cksp4ce](https://twitter.com/b4cksp4ce)
 
