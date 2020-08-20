@@ -1,11 +1,8 @@
 import styled from 'styled-components';
-import { darken } from 'polished';
-
-import { COLOR } from '../../constants';
 
 export const HeaderWrapper = styled.div`
-  background-color: ${COLOR.REBECCA_PURPLE};
-  border-bottom: 0.2rem solid ${darken(0.2, COLOR.REBECCA_PURPLE)};
+  background-color: var(--rebecca-purple);
+  border-bottom: 0.2rem solid var(--rebecca-purple);
 `;
 
 export const HeaderInner = styled.div`
@@ -15,7 +12,7 @@ export const HeaderInner = styled.div`
 
 export const SiteTitle = styled.h1`
   margin: 0;
-  color: ${COLOR.WHITE};
+  color: white;
 `;
 
 export const Navigation = styled.div`
@@ -26,12 +23,13 @@ export const Navigation = styled.div`
 
   & > * {
     margin-left: 1rem;
-    color: ${COLOR.WHITE};
+    color: white
     cursor: pointer;
 
     &:focus,
     &:hover {
-      color: ${darken(0.2, COLOR.WHITE)};
+      color: white;
+      filter: brightness(85%);
     }
   }
 

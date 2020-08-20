@@ -1,13 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Container from '../Container';
 import { HeaderWrapper, HeaderInner, SiteTitle, Navigation } from './styled';
 
 interface IHeader {
   title: string;
-  navigation: string;
+  navigation: JSX.Element[];
 }
+
 const Header = ({ title, navigation }: IHeader) => (
   <HeaderWrapper>
     <Container>
@@ -18,13 +18,6 @@ const Header = ({ title, navigation }: IHeader) => (
     </Container>
   </HeaderWrapper>
 );
-
-Header.propTypes = {
-  /** Title for the site */
-  title: PropTypes.string,
-  /** Array of navigation items */
-  navigation: PropTypes.arrayOf(PropTypes.node),
-};
 
 Header.defaultProps = {
   title: null,

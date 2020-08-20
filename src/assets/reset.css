@@ -1,0 +1,122 @@
+/**
+* Resets browser styles and apply few initial tweaks
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: black;
+}
+
+body {
+	background: white;
+}
+
+h1 {
+	margin: 0;
+	margin-bottom: 1rem;
+	font-weight: 700;
+	font-size: 2.441rem;
+}
+
+h2 {
+	margin: 0;
+	margin-bottom: 1rem;
+	font-weight: 700;
+	font-size: 1.953rem;
+}
+
+h3 {
+	margin: 0;
+	margin-bottom: 1rem;
+	font-weight: 700;
+	font-size: 1.563rem;
+}
+
+h4 {
+	margin: 0;
+	margin-bottom: 1rem;
+	font-weight: 700;
+	font-size: 1.25rem;
+}
+
+h5 {
+	margin: 0;
+	margin-bottom: 1rem;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+h6 {
+	margin: 0;
+	margin-bottom: 1rem;
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+a {
+	background-color: transparent;
+	color: white;
+	text-decoration: none;
+}
+
+a:focus, a:hover {
+	color: darken(0.2, var(--special-blue));
+	text-decoration: underline;
+}
+
+ul, ol {
+	margin-bottom: 1rem;
+	padding-left: 2rem;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+hr {
+	margin: 1rem 0;
+	height: 0.2rem;
+	background: rgba(black, 0.15);
+	border: none;
+}
+
+blockquote {
+	margin: 0 0 1rem 1rem;
+	padding: 0.25rem 0 0.25rem 1rem;
+	border-left: 0.2rem solid rgba(black, 0.15);
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+code {
+	padding: 0.05rem 0.4rem;
+	background-color: rgba(black, 0.075);
+}
+
+pre {
+	margin: 0;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	background-color: rgba(black, 0.075);
+	font-size: 0.8rem;
+}
+
+pre code {
+	padding: 0;
+	background-color: transparent;
+}

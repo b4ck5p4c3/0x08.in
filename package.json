@@ -47,7 +47,6 @@
     "gatsby-plugin-typescript": "^2.1.7",
     "gatsby-source-filesystem": "^2.1.22",
     "gatsby-transformer-sharp": "^2.2.14",
-    "polished": "^3.4.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
