@@ -1,57 +1,118 @@
-B4CKSP4CE
+Сайт и Wiki хакерспейса B4CKSP4CE
+
 ======
-Сайт-вики Бэкспейса.
 
-## Как добавить эвент?
-В папке `_events` создать .md-файл с названием будущей страницы эвента, в начало этого файла добавить метаданные:
-```md
----
+Реопзиторий содержит код [сайта](https://0x08.in) и [Wiki](https://0x08.in/wiki), а в Issues обсуждаются любые вопросы касательно происходящего в спэйсе.
 
-layout: event
-title: Мастер-класс «Как войти в разработку под zx-spectrum»
-date: 07.12.2019 16:00
+Сайт доступен на публичном домене 0x08.in с помощью механизма GitHub Pages. Исходный код проекта и связанные с ним файлы находятся в ветке `dev`.
 
----
+Новые страницы добавляются в виде [.mdx, .md](https://mdxjs.com/getting-started) файлов, а код компонентов и лэйаута пишется на TypeScript с использованием GraphQL.
+
+Дистрибутив сайта собирается с помощью [Gatsby.js](https://www.gatsbyjs.com/docs/) и [автоматически публикуется](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/#deploying-to-a-github-pages-subdomain-at-githubio) в ветку `master`.
+
+## Как поднять это локально? 
+
+1.  **Склонировать репозиторий и запустить сборку**
+
+    ```shell
+    git pull https://github.com/b4ck5p4c3/0x08.in
+    cd 0x08.in
+    npm i
+    npm start
+    ```
+
+2.  **Открыть локальный сайт в бразуере и разрабатывать! :)**
+
+    Your site is now running at `http://localhost:8000`!
+
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+
+    Open the `0x08.in` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+
+## Features
+
+- [Gatsby MDX](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-mdx) for JSX in Markdown loading, parsing, and rendering of pages
+- [Styled Components](https://www.styled-components.com/) for CSS-in-JS
+- [ESLint](https://eslint.org/) with [Airbnb's config](https://www.npmjs.com/package/eslint-config-airbnb)
+- [Prettier](https://prettier.io/) integrated into ESLint
+
+## Development
+
+```shell
+# install dependencies
+npm i
+
+# serve site and stroybook with hot reload
+npm start
+
+# serve with hot reload for development (localhost:8000)
+npm run develop
+
+# lint project
+npm run lint
+
+# format project source
+npm run format
+
+# run tests
+npm test
+
+# build for production
+npm run build
+
+# serve locally (after building)
+npm run serve
+
+# clean the local build
+npm run clean
 ```
 
-Помимо вышеперечисленных обязательных метаданных, есть ещё дополнительные поля, которые при заполнении генерируют более полный Rich Content объект для поисковиков:
-```
-event_description: Описание эвента для поисковых движков 
-end_date: 07.12.2019 18:00
-```
+## Структура проекта
 
-При этом, в контент страницы не нужно добавлять ни дату, ни заголовок — в шаблоне они уже добавлены. Получается, что идеальный пост выглядит примерно так:
-```md
----
+A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-layout: event
-title: Мастер-класс «Как войти в разработку под zx-spectrum»
-date: 07.12.2019 16:00
-event_description: На семинаре Петр (errorsoft) расскажет как настроить окружение для разработки под Спектрум (ассемблер, редактор, эмулятор), про структуру памяти и научит участников создавать простые атрибутные эффекты.
-end_date: 07.12.2019 18:00
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
----
-Сообщества Embedded и ChaosConstructions открывают серию семинаров, посвященных демосцене — полностью некоммерческому и соревновательному, спортивному виду искусства, позволяющему делать яркие и красивые спецэффекты в ограниченных вычислительных ресурсах.
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-На первом семинаре "Как войти в разработку под ZX-Spectrum"  Петр aka [errorsoft](https://github.com/errorcalc) расскажет как настроить окружение для разработки под Спектрум (ассемблер, редактор, эмулятор), про структуру памяти и научит участников создавать простые атрибутные эффекты.
-```
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-Если всё заполнено правильно, то Jekyll сам добавит событие в каталог событий (/events) в нужный год и месяц.
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-## Как собрать и протестировать это локально? 
-Всё завязано на гем [github/pages-gem](https://github.com/github/pages-gem), можно его поставить на хост-машину, но в репозитории лежит готовый Dockerfile, который всё сделает за вас в контейнере, чтобы не мусорить лишний раз.
+4.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-```bash
-git pull https://github.com/b4ck5p4c3/0x08.in
-cd 0x08.in
-docker build . -t b4cksp4ce/ghpages
-docker run --rm -p 8080:4000 -v `pwd`:/jekyll b4cksp4ce/ghpages
-```
+5.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
-Сайт будет доступен по адресу http://localhost:8080/
+6.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+
+7.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+
+8. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+
+9. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+10. **`README.md`**: A text file containing useful reference information about your project.
+
+## 🎓 Learning Gatsby
+
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+
+- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+
 
 ## Лицензия
 
 ![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)
-
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
