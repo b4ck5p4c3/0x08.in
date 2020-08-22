@@ -1,6 +1,9 @@
-export const NAV_ITEMS = [
-  { to: '/', label: 'Index' },
-  { to: '/page-2', label: 'Page 2' },
-  { to: '/events', label: 'Events' },
-  { to: '/example', label: 'Markdown Example' }
+/**
+ * Project level common constants 
+ */
+
+export const MENU_ITEMS = [
+  { to: '/projects', label: '/projects' },
+  { to: '/events', label: '/events' },
+  { to: '/wiki', label: '/wiki' }
 ];

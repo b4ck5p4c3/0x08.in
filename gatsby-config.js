@@ -14,12 +14,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-plugin-mdx',
-      options: {
-        extensions: ['.md', '.mdx']
-      }
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'assets',
@@ -29,14 +23,23 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'pages',
-        path: `${__dirname}/src/pages`
+        name: 'content',
+        path: `${__dirname}/content`
       }
     },
     {
       resolve: 'gatsby-plugin-page-creator',
       options: {
-        path: `${__dirname}/src/pages`
+        path: `${__dirname}/content`
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: ['.md', '.mdx'],
+        defaultLayouts: {
+          default: require.resolve('./src/components/Layout/index.tsx')
+        }
       }
     },
     {

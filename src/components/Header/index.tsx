@@ -1,27 +1,20 @@
 import React from 'react';
+import {Link} from 'gatsby';
 
-import Container from '../Container';
-import { HeaderWrapper, HeaderInner, SiteTitle, Navigation } from './styled';
+import Menu from '../Menu';
 
-interface IHeader {
-  title: string;
-  navigation: JSX.Element[];
-}
+import { HeaderWrapper, HeaderInner, SiteTitle } from './styled';
+import { Props } from './types';
 
-const Header = ({ title, navigation }: IHeader) => (
+const Header = ({ title }: Props) => (
   <HeaderWrapper>
-    <Container>
-      <HeaderInner>
+    <HeaderInner>
+      <Link to='/'>
         <SiteTitle>{title}</SiteTitle>
-        {navigation && <Navigation>{navigation}</Navigation>}
-      </HeaderInner>
-    </Container>
+      </Link>
+      <Menu />
+    </HeaderInner>
   </HeaderWrapper>
 );
-
-Header.defaultProps = {
-  title: null,
-  navigation: null,
-};
 
 export default Header;

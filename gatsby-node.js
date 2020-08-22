@@ -9,5 +9,3 @@
  *
  * See: https://www.gatsbyjs.com/docs/typescript/
  */
-
-// You can delete this file if you're not using it
