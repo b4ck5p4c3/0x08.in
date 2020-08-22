@@ -12,7 +12,7 @@ const Header = ({ title, navigation }: IHeader) => (
   <HeaderWrapper>
     <Container>
       <HeaderInner>
-        <SiteTitle to="/">{title}</SiteTitle>
+        <SiteTitle>{title}</SiteTitle>
         {navigation && <Navigation>{navigation}</Navigation>}
       </HeaderInner>
     </Container>
