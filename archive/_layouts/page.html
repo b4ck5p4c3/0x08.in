@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <title>{{ page.title }} &bull; {{ site.title }}</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="/"><img src="/assets/backspace-white.svg" alt="Backspace logo"></a>
+        <ul class="navbar">
+          {% for link in site.data.routes.nav-bar %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <section class="content-wrap">
+        {{ content }}
+        <p>
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+          </a>
+          <br />
+          This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
+

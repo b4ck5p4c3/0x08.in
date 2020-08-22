@@ -1,0 +1,12 @@
+main:
+        - title: "./B4CKSP4CE/"
+          url: "https://0x08.in"
+nav-bar:
+        - title: "wiki"
+          url: /wiki
+        - title: "События"
+          url: /events
+        - title: "Контакты"
+          url: /contacts
+        - title: "Календарь"
+          url: https://calendar.google.com/calendar/embed?src=n0oev7vtqntpok3phdbb48cvu0%40group.calendar.google.com&ctz=Europe%2FMoscow
