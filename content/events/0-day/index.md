@@ -14,12 +14,12 @@ starts: 27.10.2019 18:00
 
 Мероприятие состоялось!
 
-[0day_0](./photos/0.jpg)
+![0day_0](./photos/0.jpg)
 
-[0day_1](./photos/1.jpg)
+![0day_1](./photos/1.jpg)
 
-[0day_2](./photos/2.jpg)
+![0day_2](./photos/2.jpg)
 
-[0day_3](./photos/3.jpg)
+![0day_3](./photos/3.jpg)
 
-[0day_4](./photos/4.jpg)
+![0day_4](./photos/4.jpg)

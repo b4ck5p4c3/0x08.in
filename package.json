@@ -22,7 +22,7 @@
   },
   "scripts": {
     "develop": "gatsby develop",
-    "start": "concurrently --kill-others \"npm run clean\" \"npm run develop\"",
+    "start": "npm run clean && concurrently --kill-others \"npm run develop\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "build": "npm run build:gatsby",
@@ -45,6 +45,7 @@
     "gatsby-plugin-sharp": "^2.2.22",
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-typescript": "^2.1.7",
+    "gatsby-remark-images": "^3.3.25",
     "gatsby-source-filesystem": "^2.1.22",
     "gatsby-transformer-sharp": "^2.2.14",
     "prop-types": "^15.7.2",

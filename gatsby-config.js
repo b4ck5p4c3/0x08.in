@@ -10,10 +10,11 @@ module.exports = {
     keywords: 'бэкспейс, бекспейс, бекспэйс, backspace, b4cksp4ce, хакспейс, хакспэйс, hackspace, хакерспэйс, хакерспейс, hackerspace'
   },
   plugins: [
+    'gatsby-plugin-sharp',
+    'gatsby-remark-images',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -70,7 +71,18 @@ module.exports = {
           wiki: require.resolve('./src/components/Layout/Wiki/index.tsx'),
           event: require.resolve('./src/components/Layout/Event/index.tsx'),
           project: require.resolve('./src/components/Layout/Project/index.tsx')
-        }
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              wrapperStyle: 'margin-left: 0;',
+              withWebp: {
+                quality: 80
+              }
+            },
+          },
+        ],
       }
     },
     {
