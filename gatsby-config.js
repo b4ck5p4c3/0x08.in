@@ -24,8 +24,29 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'content',
-        path: `${__dirname}/content`
+        name: 'page',
+        path: `${__dirname}/pages`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'wiki',
+        path: `${__dirname}/content/wiki`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'event',
+        path: `${__dirname}/content/events`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'project',
+        path: `${__dirname}/content/projects`
       }
     },
     {
@@ -35,11 +56,20 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-page-creator',
+      options: {
+        path: `${__dirname}/pages`
+      }
+    },
+    {
       resolve: 'gatsby-plugin-mdx',
       options: {
         extensions: ['.md', '.mdx'],
         defaultLayouts: {
-          default: require.resolve('./src/components/Layout/index.tsx')
+          default: require.resolve('./src/components/Layout/index.tsx'),
+          wiki: require.resolve('./src/components/Layout/Wiki/index.tsx'),
+          event: require.resolve('./src/components/Layout/Event/index.tsx'),
+          project: require.resolve('./src/components/Layout/Project/index.tsx')
         }
       }
     },
