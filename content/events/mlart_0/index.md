@@ -1,9 +1,10 @@
 ---
-start_date: 02.02.2020 16:20
-end_date: 02.02.2020 20:20
+title: Computational Art Meetup
+description: 
+keywords:
+starts: 02.02.2020 16:20
+ends: 02.02.2020 20:20
 ---
-
-# Computational Art Meetup
 
 Встреча посвященная machine learning art
 

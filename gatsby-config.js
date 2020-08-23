@@ -7,6 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: 'B4CKSP4CE',
+    keywords: 'бэкспейс, бекспейс, бекспэйс, backspace, b4cksp4ce, хакспейс, хакспэйс, hackspace, хакерспэйс, хакерспейс, hackerspace'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

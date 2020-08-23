@@ -1,8 +1,9 @@
 ---
-date: 20.02.2020 19:00
+title: Mediaelectromechanical day 3
+description: 
+keywords:
+starts: 20.02.2020 19:00
 ---
-
-# Mediaelectromechanical day 3
 
 ![promo](./assets/mediaem_promo.gif "game of life on the fluepdot. By alg & fluepke")
 

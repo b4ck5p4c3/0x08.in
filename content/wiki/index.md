@@ -1,12 +1,8 @@
 ---
-
-layout: page
-title: B4CKSP4CE W1KI
+title: W1KI
 description: Описание хакспейса и того, как существовать в хакспейсе
-
+keywords:
 ---
-
-# B4CKSP4CE W1KI
 
 ## Роли и участие
 

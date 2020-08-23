@@ -1,8 +1,9 @@
 ---
-date: 09.11.2019 13:37
+title: СКУД Hackathon
+description: 
+keywords: 
+starts: 09.11.2019 13:37
 ---
-
-# СКУД Hackathon
 
 Собираемся добавить в наш B4CKPS4CE немного IoT и автоматизации!
 
