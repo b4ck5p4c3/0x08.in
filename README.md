@@ -17,7 +17,7 @@ git pull https://github.com/b4ck5p4c3/0x08.in
 # Перейти в директорию проекта
 cd 0x08.in
 
-# Запустить сборку
+# Установить зависимости и запустить сборку
 npm i && npm start
 
 # Дождаться окончания:
@@ -30,61 +30,27 @@ Your site is now running at http://localhost:8000
 
 ```
 
-После – можно открыть локальный сайт и разрабатывать :) Изменения в файлах автоматически обновят страницы!
+После этого можно открывать локальный сайт и разрабатывать. Изменения в файлах автоматически обновят страницы.
 
-На `http://localhost:8000/___graphql` можно будет поиграться с данными через GraphQL API (см. [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql))
+В режиме разработки (по умолчанию) на `http://localhost:8000/___graphql` можно поиграться с данными через GraphQL API (см. [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql))
 
 ## Файловая структура проекта
 
-```
-events/                     # Мероприятия
+**Важно!** В разных частях проекта исползуются разные технологии, 
 
-	example/				# Разовое
-
-		README.md			# Анонс, подробное описание
-
-		assets/				# Файлы анонса
-			invitation.mp4
-			cover.gif
-			...
-		
-		photos/				# Фотографии с события
-			00.jpg
-			...
-
-		misc/				# Любые другие файлы
-			slides.pdf
-			tracklist.txt
-			...
-
-
-	regular-example_0/		# Регулярное
-		
-		README.md		
-		...
-
-	...
-
-```
-
-
-## Структура проекта
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
+Файловая структура наиболее интересных частей проекта выглядит так:
     .
+		├── content/
+			├── events/
+			├── projects/
+			└── wiki/
+		├── pages/
     ├── src/
-    ├──── assets
-    ├──── components/
-    ├──── pages/
-        ├── wiki/
-        ├── events/
-        └── projects/
     ├── CNAME
+		├── robots.txt
     ├── gatsby-*.js
-    ├── google*.html
-    ├── robots.txt
-    └── yandex_*.html
+		├── google*.html
+    └── yandex_*.html 
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
