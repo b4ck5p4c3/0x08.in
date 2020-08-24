@@ -45,12 +45,13 @@ Your site is now running at http://localhost:8000
   ├── events/
   ├── projects/
   └── wiki/
-├── ...		
-├── CNAME
-├── robots.txt
-├── gatsby-*.js
-├── google*.html
-└── yandex*.html 
+├── static/
+  ├── CNAME
+  ├── robots.txt
+  ├── google*.html
+  └── yandex*.html 
+├── ...  
+└── gatsby-*.js
 ```
 
 ### Исходники
@@ -61,11 +62,11 @@ Your site is now running at http://localhost:8000
 - **`content/projects`** - страницы проектов
 - **`content/wiki`** - содержимое Wiki спэйса
 
-### Дистрибутив
+### Статика
 
-- **`CNAME`** - доменное имя для GitHub Pages
-- **`robots.txt`** - ограничения для поисковиков
-- **`google*.html, yandex*.html`** - подтверждение владения доменом и сайтом
+- **`static/CNAME`** - доменное имя для GitHub Pages
+- **`static/robots.txt`** - ограничения для поисковиков
+- **`static/google*.html, yandex*.html`** - подтверждение владения доменом и сайтом
 
 Кроме файлов в репозитории, в процессе установки проекта и сборки сайта генерируются слеедующие:
 
@@ -73,7 +74,7 @@ Your site is now running at http://localhost:8000
 - **`public/`** - статический дистрибутив сайта
 - **`node_modules/`** - зависимости проекта
 
-После публикации сайта в ветку master, пользователям будет доступен именно статический дистрибутив собранный в `public/`, а так же файлы для поисковиков и GitHub Pages.
+После публикации сайта в ветку master, пользователям будет доступен статический дистрибутив собранный в `public/`, а так же файлы для поисковиков и GitHub Pages из папки `/static`.
 
 Остальные файлы можно считать служебными и без предварительного изучения документации технологий их лучше не трогать.
 
