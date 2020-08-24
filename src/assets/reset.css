@@ -2,6 +2,11 @@
 * Resets browser styles and apply few initial tweaks
 */
 
+@font-face {
+  font-family: "Special Elite";
+  src: url("./SpecialElite-Regular.ttf");
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -68,11 +73,6 @@ p {
 a {
 	background-color: transparent;
 	text-decoration: none;
-}
-
-a:focus, a:hover {
-	color: darken(0.2, var(--special-blue));
-	text-decoration: underline;
 }
 
 ul, ol {

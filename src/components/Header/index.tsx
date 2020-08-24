@@ -1,19 +1,22 @@
 import React from 'react';
 import {Link} from 'gatsby';
+import styled from 'styled-components';
 
 import Menu from '../Menu';
+import Logo from '../Logo';
 
-import { HeaderWrapper, HeaderInner, SiteTitle } from './styled';
-import { Props } from './types';
+import {Props} from './types';
 
-const Header = ({ title }: Props) => (
+export const HeaderWrapper = styled.div`
+  display: flex;
+  flex-flow: nowrap row;
+  background-color: var(--rebecca-purple);
+`;
+
+const Header = ({siteMetadata}: Props) => (
   <HeaderWrapper>
-    <HeaderInner>
-      <Link to='/'>
-        <SiteTitle>{title}</SiteTitle>
-      </Link>
-      <Menu />
-    </HeaderInner>
+    <Logo title={siteMetadata.title} />
+    <Menu />
   </HeaderWrapper>
 );
 

@@ -6,41 +6,41 @@ import '../../assets/normalize.css';
 import '../../assets/variables.css';
 import '../../assets/reset.css';
 
+import Head from '../Head';
 import Header from '../Header';
 
-import { Props } from './types';
+import { Props, RootProps, QueryData } from './types';
 
-export default ({ children }: Props) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
+const defaultLayoutQuery = graphql`
+  query defaultLayoutQuery {
+    site {
+      siteMetadata {
+        title
       }
-    `}
-    render={data => (
-      <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            {
-              name: 'description',
-              content: 'Sample'
-            },
-            {
-              name: 'keywords',
-              content: 'sample, something'
-            }]
-          }
-        >
-          <html />
-        </Helmet>
-        <Header title={data.site.siteMetadata.title} />
-        {children}
-      </>
+    }
+  }
+`;
+
+const DefaultRoot = (props: RootProps) => {
+  const {children, ...rest} = props;
+
+  return (
+    <>
+      <Head {...rest} />
+      <Header {...rest} />
+      {children}
+    </>
+  )
+};
+
+export default (props: Props) => (
+  <StaticQuery
+    query={defaultLayoutQuery}
+    render={({site}: QueryData) => (
+      <DefaultRoot
+        {...props}
+        siteMetadata={site.siteMetadata}
+      />
     )}
   />
 );
