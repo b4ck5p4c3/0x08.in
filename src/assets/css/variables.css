@@ -1,0 +1,20 @@
+:root {
+	/* Colors */
+	--theme-dark-bg-active: #383e4a;
+	--theme-dark-bg-light: #282c34;
+	--theme-dark-bg-dark: #21252b;
+
+	--typo-backspace-yellow: #f5e734;
+	--typo-mickey-purple: #800080;
+	--typo-just-inactive: #595c5f;
+	--typo-special-blue: #1a58cc;
+	--typo-secondary: #a9aaae;
+
+	/* Spaces */
+
+
+	/* Sizes */
+	--header-height-default: 80px;
+	--header-height-mobile: 120px;
+	--footer-height: 30px;
+}

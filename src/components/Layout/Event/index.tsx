@@ -1,10 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { StaticQuery, graphql, Link } from 'gatsby';
-
-import '../../../assets/normalize.css';
-import '../../../assets/variables.css';
-import '../../../assets/reset.css';
+import { StaticQuery, graphql } from 'gatsby';
 
 import Header from '../../Header';
 

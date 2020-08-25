@@ -3,21 +3,27 @@ import {Link} from 'gatsby';
 import styled from 'styled-components';
 
 import Menu from '../Menu';
-import Logo from '../Logo';
+import Shell from '../Shell';
 
 import {Props} from './types';
 
-export const HeaderWrapper = styled.div`
+export const Wrapper = styled.header`
+  top: 0;
   display: flex;
-  flex-flow: nowrap row;
-  background-color: var(--rebecca-purple);
+  position: sticky;
+  padding-top: 30px;
+  justify-content: end;
+  flex-direction: column;
+  height: var(--header-height-mobile);
+  line-height: var(--header-height-default);
+  background-color: var(--theme-dark-bg-dark);
 `;
 
 const Header = ({siteMetadata}: Props) => (
-  <HeaderWrapper>
-    <Logo title={siteMetadata.title} />
+  <Wrapper>
+    <Shell title={siteMetadata.title} />
     <Menu />
-  </HeaderWrapper>
+  </Wrapper>
 );
 
 export default Header;

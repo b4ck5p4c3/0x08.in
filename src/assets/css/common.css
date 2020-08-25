@@ -4,20 +4,25 @@
 
 @font-face {
   font-family: "Special Elite";
-  src: url("./SpecialElite-Regular.ttf");
+	src:
+		url('../fonts/Special Elite.woff2') format('woff2'),
+		url('../fonts/Special Elite.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+	src:
+		url('../fonts/Roboto Mono.ttf') format('truetype');;
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-html {
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	color: black;
 }
 
 body {
@@ -71,6 +76,7 @@ p {
 }
 
 a {
+	color: var(--typo-special-blue);
 	background-color: transparent;
 	text-decoration: none;
 }

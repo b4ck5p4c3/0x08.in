@@ -5,30 +5,67 @@ import styled from 'styled-components';
 import {MENU_ITEMS} from '../../constants';
 import {MenuItem} from '../../types';
 
-export const MenuWrapper = styled.div`
-  margin-left: auto;
-  display: flex;
-  flex-flow: nowrap row;
-  align-items: flex-end;
+import corssIcon from '../../assets/img/circle-cross-icon.webp'; 
+import pageIcon from '../../assets/img/text-icon.png'; 
 
-  & > * {
-    margin-left: 1rem;
-    color: white;
-    cursor: pointer;
+const PageIcon = styled.img`
+	width: 12px;
+	height: 16px;
+	opacity: 0.8;
+	filter: invert();
+	margin-right: 10px;
+`;
 
-    &:focus,
-    &:hover {
-      filter: brightness(85%);
-    }
+const CrossIcon = styled.img`
+	width: 12px;
+	height: 12px;
+	opacity: 0.6;
+	filter: invert();
+	margin-left: 10px;
+	visibility: hidden;
+
+	&:hover {
+		opacity: 1;
+	}
+`;
+
+export const Wrapper = styled.div`
+	display: flex;
+	font-size: 14px;
+	align-items: end;
+	font-weight: 300;
+	line-height: 20px;
+	flex-direction: row;
+	font-family: Helvetica, sans-serif;
+
+	& > * {
+		border-right: 1px solid var(--theme-dark-bg-dark);
+		background-color: var(--theme-dark-bg-light);
+		color: var(--typo-secondary);
+		padding: 7px 7px 7px 14px;
+		cursor: pointer;	
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		&[aria-current] {
+			background-color: var(--theme-dark-bg-active)
+		}
+
+    &:hover img {
+      visibility: visible;
+		}
   }
 
-  & > *:first-child {
-    margin-left: 0;
+  & > *:last-child {
+    border-right: none;
   }
 `;
 
 export default () => (
-	<MenuWrapper>
+	<Wrapper>
 		{
 			MENU_ITEMS.map(({ to, href, label }: MenuItem) => {
 				if (href) {
@@ -41,13 +78,17 @@ export default () => (
 
 				if (to) {
 					return (
-						<Link key={label} to={to}>
-							{label}
-						</Link>
+						<>
+							<Link key={label} to={to}>
+								<PageIcon src={pageIcon} />
+								{label}
+								<CrossIcon src={corssIcon} />
+							</Link>
+						</>
 					);
 				}
 			})
 		}
-	</MenuWrapper>
+	</Wrapper>
 );
 

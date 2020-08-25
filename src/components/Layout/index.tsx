@@ -1,15 +1,32 @@
 import React from 'react';
-import Helmet from 'react-helmet';
-import { StaticQuery, graphql, Link } from 'gatsby';
-
-import '../../assets/normalize.css';
-import '../../assets/variables.css';
-import '../../assets/reset.css';
+import styled from 'styled-components';
+import {StaticQuery, graphql} from 'gatsby';
 
 import Head from '../Head';
 import Header from '../Header';
+import Footer from '../Footer';
 
-import { Props, RootProps, QueryData } from './types';
+import {Props, RootProps, QueryData} from './types';
+
+const StyledRoot = styled.div`
+  min-height: calc(100vh - var(--footer-height));
+  background-color: var(--theme-dark-bg-light);
+  color: white;
+`;
+
+const StyledContent = styled.article`
+  font-family: 'Roboto Mono', 'monospace';
+  font-variation-settings: 'wght' 350;
+  padding: 30px 40px;
+  line-height: 20px;
+  max-width: 1024px;
+  font-size: 15px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1024px) {
+    max-width: none;
+  }
+`;
 
 const defaultLayoutQuery = graphql`
   query defaultLayoutQuery {
@@ -26,9 +43,14 @@ const DefaultRoot = (props: RootProps) => {
 
   return (
     <>
-      <Head {...rest} />
-      <Header {...rest} />
-      {children}
+      <StyledRoot>
+        <Head {...rest} />
+        <Header {...rest} />
+        <StyledContent>
+          {children}
+        </StyledContent>
+      </StyledRoot>
+      <Footer {...rest} />
     </>
   )
 };

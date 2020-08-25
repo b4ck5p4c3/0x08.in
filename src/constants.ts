@@ -5,5 +5,5 @@
 export const MENU_ITEMS = [
   { to: '/projects', label: '/projects' },
   { to: '/events', label: '/events' },
-  { to: '/wiki', label: '/wiki' }
+  { to: '/contacts', label: '/contacts' }
 ];

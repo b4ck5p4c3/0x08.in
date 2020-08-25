@@ -61,10 +61,7 @@ module.exports = {
       options: {
         extensions: ['.md', '.mdx'],
         defaultLayouts: {
-          default: require.resolve('./src/components/Layout/index.tsx'),
-          wiki: require.resolve('./src/components/Layout/Wiki/index.tsx'),
-          event: require.resolve('./src/components/Layout/Event/index.tsx'),
-          project: require.resolve('./src/components/Layout/Project/index.tsx')
+          default: require.resolve('./src/components/Layout/index.tsx')
         },
         gatsbyRemarkPlugins: [
           {
@@ -88,7 +85,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/assets/logo.svg' // This path is relative to the root of the site.
+        icon: 'src/assets/img/logo.svg' // This path is relative to the root of the site.
       }
     }
     // 'gatsby-plugin-offline' is an optional plugin which enables Progressive Web App + Offline functionality

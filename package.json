@@ -22,7 +22,8 @@
   },
   "scripts": {
     "develop": "gatsby develop",
-    "start": "npm run clean && concurrently --kill-others \"npm run develop\"",
+    "start": "concurrently --kill-others \"npm run develop\"",
+    "fresh": "npm run clean && concurrently --kill-others \"npm run develop\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "build": "npm run build:gatsby",
