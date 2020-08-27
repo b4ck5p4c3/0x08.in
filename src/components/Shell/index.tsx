@@ -17,7 +17,7 @@ const LogoLink = styled(Link)`
 	display: flex;
 `;
 
-const User = styled.span`
+const User = styled(Link)`
 	color: var(--typo-backspace-yellow);
 	margin-left: 5px;
 
@@ -35,6 +35,7 @@ const Dir = styled(Link)`
 `;
 
 const Dollar = styled(Link)`
+	margin-left: 20px;
 	color: var(--typo-just-inactive);
 
 	&:hover {
@@ -53,12 +54,12 @@ const Wiki = styled(Link)`
 
 export default ({title}: Props) => (
 	<Wrapper>
-		<LogoLink to='/' title={title}>
+		<LogoLink to='/' title='⌫'>
 			<img src={logo} alt={title} />
 		</LogoLink>
-		<User>{title}:</User>
-		<Dir to='/' title={title}>~/</Dir>
-		<Dollar to='/fees' title='Support us'>$</Dollar>
+		<User to='/' title={title}>{title}:</User>
+		<Dir to='/' title='home'>~</Dir>
+		<Dollar to='/fees' title='$upport us'>$</Dollar>
 		<Wiki to='/wiki' title={title + ' W1KI'}>cd ~/W1KI</Wiki>
 	</Wrapper>
 );

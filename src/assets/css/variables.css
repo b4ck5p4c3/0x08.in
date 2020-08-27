@@ -1,5 +1,6 @@
 :root {
 	/* Colors */
+	--theme-dark-bg-highlighter: #2E3F40;
 	--theme-dark-bg-active: #383e4a;
 	--theme-dark-bg-light: #282c34;
 	--theme-dark-bg-dark: #21252b;
@@ -14,7 +15,11 @@
 
 
 	/* Sizes */
-	--header-height-default: 80px;
-	--header-height-mobile: 120px;
+	--header-line-height: 80px;
+	--header-height-negative: -120px;
+	--header-height: 120px;
 	--footer-height: 30px;
+
+	/* Typography */
+	--font-size: 15px;
 }

@@ -1,7 +1,8 @@
+import { ReactChild } from 'react';
 import {SiteMetadata, SiteData} from '../../types';
 
 export type Props = {
-	children?: Element;
+	children?: ReactChild;
 };
 
 export type RootProps = Props & {

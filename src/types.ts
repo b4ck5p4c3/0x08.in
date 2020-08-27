@@ -3,9 +3,8 @@
  */
 
 export type MenuItem = {
-	to?: string;
-	label: string;
-	href?: string;
+	to: string;
+	key: string;
 };
 
 

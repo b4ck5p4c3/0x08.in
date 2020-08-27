@@ -3,7 +3,7 @@
  */
 
 export const MENU_ITEMS = [
-  { to: '/projects', label: '/projects' },
-  { to: '/events', label: '/events' },
-  { to: '/contacts', label: '/contacts' }
+  { to: '/projects', key: '/projects' },
+  { to: '/events', key: '/events' },
+  { to: '/contacts', key: '/contacts' }
 ];

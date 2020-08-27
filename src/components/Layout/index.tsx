@@ -1,31 +1,18 @@
-import React from 'react';
+import React, { ReactChild } from 'react';
 import styled from 'styled-components';
 import {StaticQuery, graphql} from 'gatsby';
 
 import Head from '../Head';
 import Header from '../Header';
 import Footer from '../Footer';
+import Content from '../Content';
 
 import {Props, RootProps, QueryData} from './types';
 
-const StyledRoot = styled.div`
+const Root = styled.div`
   min-height: calc(100vh - var(--footer-height));
   background-color: var(--theme-dark-bg-light);
   color: white;
-`;
-
-const StyledContent = styled.article`
-  font-family: 'Roboto Mono', 'monospace';
-  font-variation-settings: 'wght' 350;
-  padding: 30px 40px;
-  line-height: 20px;
-  max-width: 1024px;
-  font-size: 15px;
-  margin: 0 auto;
-
-  @media screen and (max-width: 1024px) {
-    max-width: none;
-  }
 `;
 
 const defaultLayoutQuery = graphql`
@@ -43,13 +30,11 @@ const DefaultRoot = (props: RootProps) => {
 
   return (
     <>
-      <StyledRoot>
+      <Root>
         <Head {...rest} />
         <Header {...rest} />
-        <StyledContent>
-          {children}
-        </StyledContent>
-      </StyledRoot>
+        <Content {...props} />
+      </Root>
       <Footer {...rest} />
     </>
   )

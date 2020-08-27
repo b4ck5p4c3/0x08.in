@@ -14,8 +14,8 @@ export const Wrapper = styled.header`
   padding-top: 30px;
   justify-content: end;
   flex-direction: column;
-  height: var(--header-height-mobile);
-  line-height: var(--header-height-default);
+  height: var(--header-height);
+  line-height: var(--header-line-height);
   background-color: var(--theme-dark-bg-dark);
 `;
 
