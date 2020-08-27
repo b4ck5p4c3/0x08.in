@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
 `;
 
 const Item = styled(Link)`
-	border-right: 1px solid var(--theme-dark-bg-dark);
+	border-right: 2px solid var(--theme-dark-bg-dark);
 	background-color: var(--theme-dark-bg-light);
 	color: var(--typo-secondary);
 	padding: 7px 7px 7px 14px;
