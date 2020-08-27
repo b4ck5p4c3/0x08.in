@@ -5,12 +5,11 @@ import {Props} from './types';
 
 const Content = styled.article`
   font-family: 'Roboto Mono', 'monospace';
-  font-variation-settings: 'wght' 350;
-  padding: 30px 40px;
+  font-variation-settings: 'wght' 300;
+  font-size: var(--fonr-size);
+  padding: 30px 10px;
   line-height: 20px;
   max-width: 1024px;
-  font-size: var(--fonr-size);
-  font-variation-settings: 'wght' 300;
   margin: 0 auto;
 
   @media screen and (max-width: 1024px) {
