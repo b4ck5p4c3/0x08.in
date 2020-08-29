@@ -11,10 +11,8 @@ export const Wrapper = styled.header`
   top: 0;
   display: flex;
   position: sticky;
-  padding-top: 30px;
   justify-content: end;
   flex-direction: column;
-  height: var(--header-height);
   line-height: var(--header-line-height);
   background-color: var(--theme-dark-bg-dark);
 `;

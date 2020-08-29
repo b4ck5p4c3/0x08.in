@@ -8,7 +8,9 @@ module.exports = {
   siteMetadata: {
     root: 'https://0x08.in',
     title: 'B4CKSP4CE',
-    keywords: 'бэкспейс, бекспейс, бекспэйс, backspace, b4cksp4ce, хакспейс, хакспэйс, hackspace, хакерспэйс, хакерспейс, hackerspace'
+    keywords: 'бэкспейс, бекспейс, бекспэйс, backspace, b4cksp4ce, хакспейс, хакспэйс, hackspace, хакерспэйс, хакерспейс, hackerspace',
+    gitHubProject: 'b4ck5p4c3/0x08.in',
+    gitHubBranch: 'feature/new-site'
   },
   plugins: [
     'gatsby-plugin-sharp',
@@ -16,6 +18,18 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'B4CKSP4CE Hackerspace',
+        short_name: '0x08',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/assets/img/logo.svg' // This path is relative to the root of the site.
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -72,20 +86,8 @@ module.exports = {
                 quality: 80
               }
             },
-          },
+          }
         ],
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'B4CKSP4CE Hackerspace',
-        short_name: '0x08',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/assets/img/logo.svg' // This path is relative to the root of the site.
       }
     }
     // 'gatsby-plugin-offline' is an optional plugin which enables Progressive Web App + Offline functionality

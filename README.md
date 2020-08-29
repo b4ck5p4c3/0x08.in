@@ -1,12 +1,12 @@
-# Сайт и Wiki хакерспейса B4CKSP4CE
+# Хакерспейс B4CKSP4CE
 
-Репозиторий содержит исходный код и содержимое [сайта](https://0x08.in) и [Wiki](https://0x08.in/wiki), а в Issues обсуждаются не только баги, но и любые вопросы касательно происходящего в спэйсе.
+Репозиторий содержит исходный код и содержимое [сайта](https://0x08.in) и [Wiki](https://0x08.in/wiki), а в Issues обсуждаются любые вопросы касательно всего происходящего в спэйсе.
 
 Сайт доступен на публичном домене 0x08.in с помощью  GitHub Pages. Исходный код проекта, содержимое страниц и связанные с ними файлы находятся в ветке `dev`.
 
-Содержимое добавляется в виде [.md и .mdx](https://mdxjs.com/getting-started) файлов, а код компонентов и обвязки пишется на TypeScript с использованием  Styled Components и GraphQL.
+Контент добавляется в виде [.md и .mdx](https://mdxjs.com/getting-started) файлов, а код компонентов страниц и обвязки пишется на TypeScript с использованием  Styled Components и GraphQL.
 
-Дистрибутив собирается с помощью [Gatsby.js](https://www.gatsbyjs.com/docs/) и [автоматически публикуется](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/#deploying-to-a-github-pages-subdomain-at-githubio) в ветку `master`.
+Дистрибутив проекта собирается с помощью [Gatsby.js](https://www.gatsbyjs.com/docs/) и [автоматически публикуется](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/#deploying-to-a-github-pages-subdomain-at-githubio) в ветку `master`.
 
 > **Важно!** В разных частях проекта используются разные технологии, подходы к написанию кода и к добавлению содержимого! Подробности – в README и CONTRIBUTING файлах основных поддиректорий.
 

@@ -1,5 +1,7 @@
-import React, { ReactChild } from 'react';
+import React, { MouseEvent } from 'react';
 import styled from 'styled-components';
+
+import linkIcon from '../../assets/img/link-icon.png'; 
 
 const Wrapper = styled.section`
   display: flex;
@@ -7,10 +9,15 @@ const Wrapper = styled.section`
 
 const Anchor = styled.a`
   position: relative;
-  top: var(--header-height-negative);
+  top: var(--anchor-margin);
 
-  :target ~ div {
-    background-color: var(--theme-dark-bg-highlighter);
+  :target ~ div,
+  :target ~ span {
+    background-color: var(--theme-dark-bg-highlight);
+  }
+
+  :target ~ span {
+    border-left: 1px solid var(--typo-backspace-yellow);
   }
 `;
 
@@ -18,29 +25,47 @@ const Elem = styled.div`
   display: flex;
   padding: 10px;
   width: 100%;
-`;
 
-const Line = styled.div`
-  color: var(--typo-secondary);
-  cursor: pointer;
-  min-width: 70px;
-  padding: 10px;
+  & a {
+    color: var(--typo-cyan);
+    text-decoration: underline;
+  }
 
-  &:hover {
-    color: white;
+  & a:hover {
+    text-decoration: none;
+  }
+
+  & a:visited {
+    color: var(--typo-mickey-purple);
   }
 `;
 
-const test = () => {
-  console.log(123);
-}
+const Line = styled.span`
+  color: var(--typo-tertiary);
+  cursor: pointer;
+  min-width: 50px;
+  padding: 10px;
+
+  border-left: 1px solid transparent;
+
+  &:hover {
+    border-left: 1px solid var(--typo-backspace-yellow);
+  }
+`;
+
+const setAnchor = ({target}: MouseEvent) => {
+  const {id} = target as HTMLElement;
+  const anchor = `#${id}`;
+
+  window.location.href = anchor;
+};
 
 export default ({children, id}) => {
 	return (
 		<Wrapper>
 			<Anchor id={`${id}`} />
 			<>
-				<Line className='line-number' onClick={test}>{id}</Line>
+				<Line onClick={setAnchor} id={id}>{id}</Line>
 				<Elem>{children}</Elem>
 			</>
 		</Wrapper>

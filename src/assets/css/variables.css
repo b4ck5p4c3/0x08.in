@@ -1,24 +1,27 @@
 :root {
 	/* Colors */
-	--theme-dark-bg-highlighter: #2E3F40;
+	--theme-dark-bg-highlighter: #567;
+	--theme-dark-bg-highlight: #3C4048;
 	--theme-dark-bg-active: #383e4a;
 	--theme-dark-bg-light: #282c34;
 	--theme-dark-bg-dark: #21252b;
+	--theme-dark-bg-slightly: #31353d;
 
 	--typo-backspace-yellow: #f5e734;
-	--typo-mickey-purple: #800080;
+	--typo-mickey-purple: #e8e;
 	--typo-just-inactive: #595c5f;
-	--typo-special-blue: #1a58cc;
-	--typo-secondary: #a9aaae;
+	--typo-special-blue: #15C;
+	--typo-secondary: #AAA;
+	--typo-tertiary: #6A6A6A;
 	--typo-green: green;
+	--typo-cyan: #8ef;
 
 	/* Spaces */
 
 
 	/* Sizes */
 	--header-line-height: 80px;
-	--header-height-negative: -120px;
-	--header-height: 120px;
+	--anchor-margin: -150px;
 	--footer-height: 30px;
 
 	/* Typography */
