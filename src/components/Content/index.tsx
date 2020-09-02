@@ -16,17 +16,30 @@ const Content = styled.article`
   }
 `;
 
-export default ({children}: Props) => (
-	<Content>
-    {
-      React.Children.map(
-        children,
-        (elem, id) => (
-          <Section id={id}>
-            {elem}
-          </Section>
+const Heading = styled.h1`
+  line-height: 2rem;
+  margin-bottom: 30px;
+  margin-top: 10px;
+
+  margin-left: ${({anchors}) => anchors ? '60px' : '10px'};
+`;
+
+export default ({children, pageContext}: Props) => {
+  const {frontmatter} = pageContext;
+
+  return (
+    <Content>
+      <Heading anchors={frontmatter.anchors}>{frontmatter.title}</Heading>
+      {
+        React.Children.map(
+          children,
+          (elem, id) => (
+            <Section id={id} frontmatter={frontmatter} >
+              {elem}
+            </Section>
+          )
         )
-      )
-    }
-	</Content>
-);
+      }
+    </Content>
+  );
+}

@@ -1,4 +1,4 @@
 export type Props = {
 	children: React.ReactElement;
-	className: string;
+	className?: string;
 };

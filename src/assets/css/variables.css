@@ -17,11 +17,13 @@
 	--typo-cyan: #8ef;
 
 	/* Spaces */
-
+	--padding-section: 10px;
+	--margin-anchor: -150px;
 
 	/* Sizes */
-	--header-line-height: 80px;
-	--anchor-margin: -150px;
+	--width-line-number: 50px;
+	--line-height-header: 80px;
+	
 	--footer-height: 30px;
 
 	/* Typography */

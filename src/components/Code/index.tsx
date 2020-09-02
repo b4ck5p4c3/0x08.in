@@ -5,6 +5,8 @@ import Highlight, {defaultProps} from 'prism-react-renderer';
 
 import {Props} from './types'; 
 
+const DEFAULT_LANG = 'markdown';
+
 const Pre = styled.pre`
 	padding: 1rem;
 `;
@@ -20,7 +22,7 @@ const LineNumber = styled.span`
 `;
 
 export default ({children, className}: Props) => {
-	const language = className.replace(/language-/, '');
+	const language = className ? className.replace(/language-/, '') : DEFAULT_LANG;
 
   return (
 		// @ts-ignore

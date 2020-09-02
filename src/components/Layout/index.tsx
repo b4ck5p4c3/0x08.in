@@ -11,45 +11,73 @@ import Content from '../Content';
 
 import {Props, RootProps, QueryData} from './types';
 
-const Page = styled.div`
+const Page = styled.main`
   min-height: calc(100vh - var(--footer-height));
   background-color: var(--theme-dark-bg-light);
   color: white;
 `;
 
-const defaultLayoutMeta = graphql`
-  query defaultLayoutMeta {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;
-
 const DefaultLayout = ({children, ...rest}: RootProps) => (
-  <main>
+  <>
+    <Head {...rest} />
+    <Header {...rest} />
     <Page>
-      <Head {...rest} />
-      <Header {...rest} />
       <Content {...rest} >
         {children}
       </Content>
     </Page>
     <Footer {...rest} />
-  </main>
+  </>
 );
 
-const components = {
+
+/**
+ * frontmatter data would be injected to props.pageContext automaticaly by GraphQL
+ * @see https://www.gatsbyjs.com/docs/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files
+ */
+const defaultLayoutMeta = graphql`
+  query defaultLayoutMeta {
+    site {
+      siteMetadata {
+        root
+        title
+        keywords
+        gitHubProject
+        gitHubBranch
+      }
+    }
+    allMdx {
+      edges {
+        node {
+          frontmatter {
+            description
+            keywords
+            starts
+            ends
+            anchors
+          }
+        }
+      }
+    }
+  }
+`;
+
+
+
+const Pre = (props: any) => (
+  <div {...props} />
+);
+
+const mdxComponents = {
   code: Code,
-  pre: (props: any) => (<div {...props} />)
+  pre: Pre
 };
 
 export default (props: Props) => (
   <StaticQuery
     query={defaultLayoutMeta}
     render={({site}: QueryData) => (
-      <MDXProvider components={components}>
+      <MDXProvider components={mdxComponents}>
         <DefaultLayout
           {...props}
           siteMetadata={site.siteMetadata}

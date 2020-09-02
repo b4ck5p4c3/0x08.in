@@ -1,7 +1,6 @@
 import React, { MouseEvent } from 'react';
 import styled from 'styled-components';
-
-import linkIcon from '../../assets/img/link-icon.png'; 
+import Brancher from '../Brancher';
 
 const Wrapper = styled.section`
   display: flex;
@@ -9,7 +8,7 @@ const Wrapper = styled.section`
 
 const Anchor = styled.a`
   position: relative;
-  top: var(--anchor-margin);
+  top: var(--margin-anchor);
 
   :target ~ div,
   :target ~ span {
@@ -23,7 +22,7 @@ const Anchor = styled.a`
 
 const Elem = styled.div`
   display: flex;
-  padding: 10px;
+  padding: var(--padding-section);
   width: 100%;
 
   & a {
@@ -41,12 +40,12 @@ const Elem = styled.div`
 `;
 
 const Line = styled.span`
-  color: var(--typo-tertiary);
-  cursor: pointer;
-  min-width: 50px;
-  padding: 10px;
-
+  min-width: var(--width-line-number);
   border-left: 1px solid transparent;
+  padding: var(--padding-section);
+  color: var(--typo-tertiary);
+  user-select: none;
+  cursor: pointer;
 
   &:hover {
     border-left: 1px solid var(--typo-backspace-yellow);
@@ -60,12 +59,20 @@ const setAnchor = ({target}: MouseEvent) => {
   window.location.href = anchor;
 };
 
-export default ({children, id}) => {
+export default ({children, id, frontmatter}) => {
+  const {anchors} = frontmatter;
+
 	return (
 		<Wrapper>
-			<Anchor id={`${id}`} />
+      <Brancher when={anchors} then={
+          <Anchor id={`${id}`} />
+        }
+      />
 			<>
-				<Line onClick={setAnchor} id={id}>{id}</Line>
+        <Brancher when={anchors} then={
+            <Line onClick={setAnchor} id={id}>{id}</Line>
+          }
+        />
 				<Elem>{children}</Elem>
 			</>
 		</Wrapper>

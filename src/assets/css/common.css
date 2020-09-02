@@ -26,6 +26,10 @@
 	box-sizing: border-box;
 }
 
+:focus {
+	outline:none;
+}
+
 article {
 	font-family: 'Roboto Mono', 'monospace';
   font-variation-settings: 'wght' 300;
@@ -39,6 +43,7 @@ h4,
 h5,
 h6 {
 	font-variation-settings: 'wght' 333;
+	line-height: 1.5rem;
 }
 
 a {

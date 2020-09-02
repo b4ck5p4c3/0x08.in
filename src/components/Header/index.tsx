@@ -13,15 +13,13 @@ export const Wrapper = styled.header`
   position: sticky;
   justify-content: end;
   flex-direction: column;
-  line-height: var(--header-line-height);
+  line-height: var(--line-height-header);
   background-color: var(--theme-dark-bg-dark);
 `;
 
-const Header = ({siteMetadata}: Props) => (
+export default ({siteMetadata}: Props) =>  (
   <Wrapper>
     <Shell title={siteMetadata.title} />
     <Menu />
   </Wrapper>
 );
-
-export default Header;

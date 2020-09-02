@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import {MENU_ITEMS} from '../../constants';
 import {MenuItem} from '../../types';
 
-import corssIcon from '../../assets/img/circle-cross-icon.webp'; 
-import pageIcon from '../../assets/img/text-icon.png'; 
+import corssIcon from '../../assets/img/circle-cross-icon-black.webp'; 
+import pageIcon from '../../assets/img/text-icon-black.png'; 
 
 export const Wrapper = styled.div`
 	display: flex;
