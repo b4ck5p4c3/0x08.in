@@ -1,3 +1,3 @@
-import {HeadProps} from '../../types';
+import {Props as HeadProps} from '../../types';
 
-export type Props = {} & HeadProps;
+export type Props = HeadProps;

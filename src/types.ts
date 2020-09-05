@@ -40,4 +40,8 @@ export type InjectedProps = {
 
 export type Site = {
 	siteMetadata: SiteMetadata; 
-}  
+}
+
+export type MetadataQuery = {
+	site: Site;
+}

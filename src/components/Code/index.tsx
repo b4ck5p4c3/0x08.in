@@ -30,7 +30,7 @@ export default ({children, className}: Props) => {
       {({className, style, tokens, getLineProps, getTokenProps}) => (
         <Pre className={className} style={{...style}}>
           {tokens.map((line, i) => (
-						<Line>
+						<Line key={i}>
 							<LineNumber>{++i}</LineNumber>
 							<div key={i} {...getLineProps({line, key: i})}>
 								{line.map((token, key) => (

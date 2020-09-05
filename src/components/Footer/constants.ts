@@ -8,5 +8,6 @@ export const URLS = {
 	vk: 'https://vk.com/b4cksp4ce',
 	matrix: 'https://matrix.to/#/#b4ck5p4c3:matrix.org',
 	email: 'mailto:info@0x08.in',
-	phone: 'tel:+78125079241'
+	phone: 'tel:+78125079241',
+	license: 'https://creativecommons.org/licenses/by/4.0/'
 } 

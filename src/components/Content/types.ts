@@ -1,7 +1,6 @@
 import {ReactChild} from 'react';
-import {PageContext} from '../../types';
+import {InjectedProps} from '../../types';
 
 export type Props = {
 	children?: ReactChild;
-	pageContext: PageContext;
-};
+} & InjectedProps;

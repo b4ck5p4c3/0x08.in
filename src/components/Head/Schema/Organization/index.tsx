@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 
 import {Props} from './types';
 
-export default ({site: {siteMetadata}}: Props) => {
+export default ({siteMetadata}: Props) => {
 	const {
 		siteTitle,
 		siteDescription,

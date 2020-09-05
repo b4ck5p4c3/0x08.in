@@ -1,6 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import {StaticQuery, graphql} from 'gatsby';
 
 import '../../assets/css/normalize.css';
 import '../../assets/css/variables.css';
@@ -10,14 +9,12 @@ import Brancher from '../Brancher';
 import EventSchema from './Schema/Event';
 import OrganizationSchema from './Schema/Organization';
 
-import {Props, Query, HeadProps} from './types';
+import {Props} from './types';
 
-const Head = (props: HeadProps) => {
+export default (props: Props) => {
 	const {
 		pageContext,
-		site: {
-			siteMetadata
-		}
+		siteMetadata
 	} = props;
 
 	const {
@@ -54,53 +51,9 @@ const Head = (props: HeadProps) => {
 			</Helmet>
 			<Brancher
 				when={hasStartDate}
-				then={
-					<EventSchema {...props} />
-				}
-				otherwise={
-					<OrganizationSchema {...props} />
-				} 
+				then={<EventSchema {...props} />}
+				otherwise={<OrganizationSchema {...props} />} 
 			/>
 		</>
 	);
-}
-
-const metadata = graphql`
-  query headMeta {
-    site {
-      siteMetadata {
-        siteRoot
-        siteTitle
-        siteKeywords
-        gitHubProject
-        gitHubBranch
-      }
-    }
-    allMdx {
-      edges {
-        node {
-          frontmatter {
-						pageTitle
-            pageDescription
-            pageKeywords
-            startDate
-            endDate
-            anchors
-            covers
-          }
-        }
-      }
-    }
-  }
-`;
-
-export default (props: Props) => {
-	return (
-		<StaticQuery
-			query={metadata}
-			render={({site}: Query) => (
-				<Head {...props} site={site} />
-			)}
-		/>
-	)
 };
