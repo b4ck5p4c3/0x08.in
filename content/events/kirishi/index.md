@@ -1,8 +1,6 @@
 ---
-title: Отчет о поездке в хакспейс Кириши
-description: 
-keywords:
-starts: 14.12.2019 12:00
+pageTitle: Отчет о поездке в хакспейс Кириши
+startDate: 14.12.2019 12:00
 ---
 
 В Киришах есть хакспейс [vk](https://vk.com/cyberunit) [страница на hackerone](https://hackerone.com/cyberunit)

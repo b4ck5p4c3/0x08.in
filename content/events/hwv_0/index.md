@@ -1,8 +1,8 @@
 ---
-title: HVW / Embedded Meetup 0
-description: 
-keywords:
-starts: 02.11.2019 15:30
+pageTitle: HVW / Embedded Meetup 0
+pageDescription: Что такое hardware hacking, и как им обмазаться. Loss, noise and two Friis equations. Особенности проектирования систем сбора данных при работе с биологическими объектами. Применение Rust для архитектуры RISC-V
+pageKeywords: embedded, hardware hacking, СВЧ, RF, человеко-машинныq интерфейс, Rust, RISC-V, FPGA
+startDate: 02.11.2019 15:30
 ---
 
 ### 1. Что такое hardware hacking, и как им обмазаться

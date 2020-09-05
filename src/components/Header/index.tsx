@@ -1,11 +1,11 @@
 import React from 'react';
-import {Link} from 'gatsby';
 import styled from 'styled-components';
+import {StaticQuery, graphql} from 'gatsby';
 
 import Menu from '../Menu';
 import Shell from '../Shell';
 
-import {Props} from './types';
+import {Props, Query} from './types';
 
 export const Wrapper = styled.header`
   top: 0;
@@ -17,9 +17,27 @@ export const Wrapper = styled.header`
   background-color: var(--theme-dark-bg-dark);
 `;
 
-export default ({siteMetadata}: Props) =>  (
-  <Wrapper>
-    <Shell title={siteMetadata.title} />
-    <Menu />
-  </Wrapper>
+const metadata = graphql`
+  query headerMetadataQuery {
+    site {
+      siteMetadata {
+        siteRoot
+        siteTitle
+        gitHubProject
+        gitHubBranch
+      }
+    }
+  }
+`;
+
+export default (props: Props) =>  (
+  <StaticQuery
+    query={metadata}
+    render={({site}: Query) => (
+      <Wrapper>
+        <Shell siteTitle={site.siteMetadata.siteTitle} />
+        <Menu />
+      </Wrapper>
+    )}
+  />
 );

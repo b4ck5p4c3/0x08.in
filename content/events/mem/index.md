@@ -1,8 +1,7 @@
 ---
-title: Mediaelectromechanical day 3
-description: 
-keywords:
-starts: 20.02.2020 19:00
+pageTitle: Mediaelectromechanical day 3
+pageDescription: Экспресс-курс по соединению Media-art, электроники и механики!
+startDate: 20.02.2020 19:00
 ---
 
 ![promo](./assets/mediaem_promo.gif "game of life on the fluepdot. By alg & fluepke")

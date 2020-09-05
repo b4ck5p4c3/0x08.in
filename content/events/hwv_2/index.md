@@ -1,8 +1,6 @@
 ---
-title: HWV / Embedded Meetup 2
-description: 
-keywords:
-starts: 08.02.2020 16:00
+pageTitle: HWV / Embedded Meetup 2
+startDate: 08.02.2020 16:00
 ---
 
 ## Доклады

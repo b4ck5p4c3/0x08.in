@@ -1,8 +1,6 @@
 ---
-title: HVW / Embedded Meetup 1 – ошибки и тестирование
-description: 
-keywords:
-starts: 30.11.2019 16:00
+pageTitle: HVW / Embedded Meetup 1 – ошибки и тестирование
+startDate: 30.11.2019 16:00
 ---
 
 ## Доклады

@@ -6,11 +6,16 @@
 
 module.exports = {
   siteMetadata: {
-    root: 'https://0x08.in',
-    title: 'B4CKSP4CE',
-    keywords: 'бэкспейс, бекспейс, бекспэйс, backspace, b4cksp4ce, хакспейс, хакспэйс, hackspace, хакерспэйс, хакерспейс, hackerspace',
+    siteRoot: 'https://0x08.in',
+    siteTitle: 'B4CKSP4CE',
+    siteDescription: 'Пространство для всех, кто интересуется технологиями, искусством, дизайном, разработкой, проектированием и созданием вещей своими руками.',
+    siteKeywords: 'бэкспейс, бекспейс, бекспэйс, backspace, b4cksp4ce, хакспейс, хакспэйс, hackspace, хакерспэйс, хакерспейс, hackerspace, мастерская, workshop, shop',
     gitHubProject: 'b4ck5p4c3/0x08.in',
-    gitHubBranch: 'feature/new-site'
+    gitHubBranch: 'feature/new-site',
+    streetAddress: 'Ланское шоссе, 14к1',
+    addressLocality: 'Санкт-Петербург',
+    postalCode: '197343',
+    email: 'info@0x08.in'
   },
   plugins: [
     'gatsby-plugin-sharp',

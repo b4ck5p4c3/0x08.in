@@ -1,7 +1,6 @@
 ---
-title: Об участии
-description: Информация о том, как устроен B4CKSP4CE для участников
-keywords:
+pageTitle: Об участии
+pageDescription: Информация о том, как устроен B4CKSP4CE для участников
 ---
 
 [Как стать участником и какие есть формы участия.](/wiki/evaluation).

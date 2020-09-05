@@ -1,8 +1,6 @@
 ---
-title: SYNC – сходка по синтам, музыке и звуку
-description: 
-keywords: 
-starts: 22.12.2019 16:20
+pageTitle: SYNC – сходка по синтам, музыке и звуку
+startDate: 22.12.2019 16:20
 ---
 
 Мероприятие проводится совместно с PLGN lab —  открытой лабораторией для экспериментов и обучения в области Art+Tech [instagram @plgnlab](https://www.instagram.com/plgnlab/).

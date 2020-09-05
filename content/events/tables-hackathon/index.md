@@ -1,8 +1,6 @@
 ---
-title: Private hardware hackaton по сборке столов
-description: 
-keywords: 
-starts: 19.10.2019 13:37
+pageTitle: Private hardware hackaton по сборке столов
+startDate: 19.10.2019 13:37
 ---
 
 ![Столы](./photos/01.jpg)

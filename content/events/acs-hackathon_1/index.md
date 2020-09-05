@@ -1,8 +1,8 @@
 ---
-title: Just another СКУД hackathon
-description: 
-keywords: 
-starts: 04.01.2020 13:37
+pageTitle: Just another СКУД hackathon
+pageDescription: Cобрание на благо автоматизации и modbus
+pageKeywords: modbus, hackathon, хактон, скуд, доступ, acs
+startDate: 04.01.2020 13:37
 ---
 
 Хакатон по СКУД, не слышали о таком, а?

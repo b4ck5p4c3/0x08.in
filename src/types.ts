@@ -7,14 +7,37 @@ export type MenuItem = {
 	key: string;
 };
 
-
+// siteMeatadata from gatsby-config.js
 export type SiteMetadata = {
-	title: string;
-	rootUrl: string;
-	description?: string;
-	keywords?: string;
+	siteRoot: string;
+	siteTitle: string;
+	siteDescription?: string;
+	siteKeywords?: string;
+	gitHubProject: string;
+	gitHubBranch: string;
+	streetAddress: string;
+	addressLocality: string;
+	postalCode: string;
 };
 
-export type SiteData = {
-	siteMetadata: SiteMetadata
+export type Frontmatter = {
+	pageTitle: string;
+	pageDescription?: string;
+	pageKeywords?: string;
+	startDate?: string;
+	endDate?: string;
+	anchors: boolean;
+	covers: boolean;
 };
+
+export type PageContext = {
+  frontmatter: Frontmatter;
+};
+
+export type InjectedProps = {
+	pageContext: PageContext;
+};
+
+export type Site = {
+	siteMetadata: SiteMetadata; 
+}  

@@ -1,8 +1,8 @@
 ---
-title: Moar one СКУД hackathon
-description: 
-keywords:
-starts: 07.01.2020 13:37
+pageTitle: Moar one СКУД hackathon
+pageDescription: Королевская битва за СКУД продолжается!
+pageKeywords: modbus, hackathon, хактон, скуд, доступ, acs
+startDate: 07.01.2020 13:37
 ---
 
 Королевская битва за СКУД продолжается! На повестке все, что осталось с прошлого раза:

@@ -1,8 +1,7 @@
 ---
-title: Киносеанс - All Creatures Welcome
-description: 
-keywords:
-starts: 22.11.2019 19:30
+pageTitle: Киносеанс - All Creatures Welcome
+pageDescription: Просмотр документального фильма Сандры Тростел о Chaos Computer Club
+startDate: 22.11.2019 19:30
 --- 
 
 Пятничным вечером соберёмся вместе, чтобы посмотреть документальный фильм Сандры Тростел о Chaos Computer Club — крупнейшей в европе хакерской ассоциации и движении.

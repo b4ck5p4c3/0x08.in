@@ -16,25 +16,30 @@ const Content = styled.article`
   }
 `;
 
-const Heading = styled.h1`
-  line-height: 2rem;
-  margin-bottom: 30px;
-  margin-top: 10px;
-
+const Heading = styled.h1<{anchors: boolean}>`
   margin-left: ${({anchors}) => anchors ? '60px' : '10px'};
+  margin-bottom: 30px;
+  line-height: 2rem;
+  margin-top: 10px;
 `;
 
 export default ({children, pageContext}: Props) => {
-  const {frontmatter} = pageContext;
+  const {
+    frontmatter,
+    frontmatter: {
+      anchors,
+      pageTitle
+    }
+  } = pageContext;
 
   return (
     <Content>
-      <Heading anchors={frontmatter.anchors}>{frontmatter.title}</Heading>
+      <Heading anchors={anchors}>{pageTitle}</Heading>
       {
         React.Children.map(
           children,
           (elem, id) => (
-            <Section id={id} frontmatter={frontmatter} >
+            <Section id={`${id}`} frontmatter={frontmatter} >
               {elem}
             </Section>
           )

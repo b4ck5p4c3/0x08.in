@@ -1,3 +1,3 @@
 export type Props = {
-	title: string;
+	siteTitle: string;
 };
