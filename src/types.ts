@@ -33,7 +33,6 @@ export type Frontmatter = {
 export type PageContext = {
   frontmatter: Frontmatter;
 };
-
 export type InjectedProps = {
 	pageContext: PageContext;
 };
@@ -41,7 +40,51 @@ export type InjectedProps = {
 export type Site = {
 	siteMetadata: SiteMetadata; 
 }
-
 export type MetadataQuery = {
 	site: Site;
 }
+
+
+export type EventMdx = {
+	frontmatter: Frontmatter;
+	excerpt: string;
+	slug: string;
+};
+export type EventEdge = {
+	node: {
+		childMdx: EventMdx;
+	}
+};
+export type EventAllFile = {
+	edges: EventEdge[];
+} 
+export type EventsQuery = {
+	allFile: EventAllFile;
+}
+export type EventInfo = {
+	slug: string;
+	excerpt: string;
+} & Partial<Frontmatter>;
+
+export type ProjectMdx = {
+	frontmatter: Frontmatter;
+	excerpt: string;
+	slug: string;
+};
+export type ProjectEdge = {
+	node: {
+		childMdx: ProjectMdx;
+		modifiedTime: string;
+	}
+};
+export type ProjectAllFile = {
+	edges: ProjectEdge[];
+} 
+export type ProjectQuery = {
+	allFile: ProjectAllFile;
+}
+export type ProjectInfo = {
+	slug: string;
+	excerpt: string;
+	modifiedTime: string;
+} & Partial<Frontmatter>;

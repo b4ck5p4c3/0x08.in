@@ -90,6 +90,7 @@ code {
 	font-family: 'Roboto Mono', monospace;
 	font-variation-settings: 'wght' 200;
 	border-radius: 2px;
+	line-height: 2rem;
 	padding: 2px 4px;
 	font-size: 14px;
 }

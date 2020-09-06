@@ -29,7 +29,7 @@ const mdxComponents = {
 
 export default ({children, ...rest}: Props) => (
   <StaticQuery
-    query={metadata}
+    query={metadataQuery}
     render={({site}: MetadataQuery) => (
       <MDXProvider components={mdxComponents}>
         <Head {...site} {...rest} />
@@ -45,8 +45,8 @@ export default ({children, ...rest}: Props) => (
   />
 );
 
-const metadata = graphql`
-  query headMeta {
+const metadataQuery = graphql`
+  query metatada {
     site {
       siteMetadata {
         siteRoot
@@ -54,6 +54,10 @@ const metadata = graphql`
         siteKeywords
         gitHubProject
         gitHubBranch
+        streetAddress
+        addressLocality
+        postalCode
+        email
       }
     }
     allMdx {

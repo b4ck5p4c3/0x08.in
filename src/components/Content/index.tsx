@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Section from '../Section';
 
 import {Props} from './types';
+import Brancher from '../Brancher';
 
 const Content = styled.article`
   padding: 30px 10px;
@@ -16,11 +17,20 @@ const Content = styled.article`
   }
 `;
 
-const Heading = styled.h1<{anchors: boolean}>`
-  margin-left: ${({anchors}) => anchors ? '60px' : '10px'};
+const Heading = styled.section<{anchors: boolean}>`
+  padding-left: 60px;
+  background-color: var(--theme-dark-bg-slightly);
+  padding-bottom: 10px;
   margin-bottom: 30px;
   line-height: 2rem;
-  margin-top: 10px;
+  padding-top: 10px;
+`;
+
+const Title = styled.h1``;
+
+const Description = styled.p<{anchors: boolean}>`
+  
+  font-style: italic;
 `;
 
 export default ({children, pageContext}: Props) => {
@@ -28,13 +38,26 @@ export default ({children, pageContext}: Props) => {
     frontmatter,
     frontmatter: {
       anchors,
-      pageTitle
+      pageTitle,
+      pageDescription
     }
   } = pageContext;
 
+  const hasPageDescription = Boolean(pageDescription);
+
   return (
     <Content>
-      <Heading anchors={anchors}>{pageTitle}</Heading>
+      <Heading anchors={anchors}>
+        <Title>{pageTitle}</Title>
+        <Brancher
+          when={hasPageDescription}
+          then={
+            <Description>
+              {pageDescription}
+            </Description>
+          }
+        />
+      </Heading>
       {
         React.Children.map(
           children,
