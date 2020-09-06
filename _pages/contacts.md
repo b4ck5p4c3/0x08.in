@@ -16,7 +16,7 @@ title: Контакты
 
 <img src="/img/telegram.png" width="20" class="img-responsive"> Telegram-канал для анонсов: [@b4ck5p4c3](tg://resolve/?domain=b4ck5p4c3)
 
-<img src="/img/telegram.png" width="20" class="img-responsive"> Live Telegram-канал: [@b4cksp4cel1ve](tg://resolve/?domain=b4cksp4cel1ve)
+<img src="/img/telegram.png" width="20" class="img-responsive"> Live Telegram-канал: [@b4cksp4ce_l1ve](tg://resolve/?domain=b4cksp4ce_l1ve)
 
 <img src="/img/telegram.png" width="20" class="img-responsive"> Бот [@b4cksp4ce_bot](tg://resolve/?domain=b4cksp4ce_bot)
 
