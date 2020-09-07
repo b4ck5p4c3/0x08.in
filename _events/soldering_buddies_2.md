@@ -2,9 +2,9 @@
 
 layout: event
 title: Мастер-класс Soldering buddies #1
-date: 03.09.2020 19:30
+date: 10.09.2020 19:30
 event_description: Мы приготовим простой набор для обучения монтажу.
-end_date: 03.09.2020 21:30
+end_date: 10.09.2020 21:30
 
 ---
 ## Soldering buddies #3 // Паяющие друзья №3
