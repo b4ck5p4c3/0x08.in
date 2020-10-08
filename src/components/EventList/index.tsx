@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {parse, compareDesc} from 'date-fns'
 import {graphql, useStaticQuery} from 'gatsby';
 
-import Event from '../Event';
+import EventItem from '../EventItem';
 
 import {EVENT_DATE_FORMAT} from '../../constants';
 import {EventsQuery, EventInfo} from '../../types';
@@ -19,7 +19,7 @@ export default () => {
 
 	return (
 		<List>
-			{sorted.map((event) => <Event {...event} />)}
+			{sorted.map((event) => <EventItem {...event} />)}
 		</List>
 	);
 };
@@ -44,11 +44,11 @@ const eventsQuery = graphql`
 				node {
 					childMdx {
 						frontmatter {
+							pageDescription
 							pageTitle
 							startDate
 							endDate
 						}
-						excerpt
 						slug
 					}
 				}
@@ -62,8 +62,8 @@ const extractEvents = ({allFile: {edges}}: EventsQuery): EventInfo[] => edges.ma
 		node: {
 			childMdx:{
 				slug = '',
-				excerpt = '',
 				frontmatter: {
+					pageDescription = '',
 					pageTitle = '',
 					startDate = '',
 					endDate = ''
@@ -72,7 +72,7 @@ const extractEvents = ({allFile: {edges}}: EventsQuery): EventInfo[] => edges.ma
 		}
 	}) => ({
 		slug,
-		excerpt,
+		pageDescription,
 		pageTitle,
 		startDate,
 		endDate

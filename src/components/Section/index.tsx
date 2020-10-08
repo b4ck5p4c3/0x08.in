@@ -11,22 +11,18 @@ const setAnchor = ({target}: MouseEvent) => {
   window.location.href = anchor;
 };
 
-export default ({children, id, frontmatter}: Props) => {
-  const {anchors} = frontmatter;
-
-	return (
-		<Wrapper>
-      <Brancher when={anchors} then={
-          <Anchor id={id} />
+export default ({children, id, hasAnchors}: Props) => (
+  <Wrapper>
+    <Brancher when={hasAnchors} then={
+        <Anchor id={id} />
+      }
+    />
+    <>
+      <Brancher when={hasAnchors} then={
+          <Line onClick={setAnchor} id={id}>{id}</Line>
         }
       />
-			<>
-        <Brancher when={anchors} then={
-            <Line onClick={setAnchor} id={id}>{id}</Line>
-          }
-        />
-				<Elem>{children}</Elem>
-			</>
-		</Wrapper>
-	)
-} 
+      <Elem>{children}</Elem>
+    </>
+  </Wrapper>
+);

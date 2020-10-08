@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {parse, compareDesc} from 'date-fns'
 import {graphql, useStaticQuery} from 'gatsby';
 
-import Project from '../Project';
+import ProjectItem from '../ProjectItem';
 
 import {PROJECT_DATE_FORMAT} from '../../constants';
 import {ProjectQuery, ProjectInfo} from '../../types';
@@ -19,7 +19,7 @@ export default () => {
 
 	return (
 		<List>
-			{sorted.map((project) => <Project {...project} />)}
+			{sorted.map((project) => <ProjectItem {...project} />)}
 		</List>
 	);
 };
@@ -45,9 +45,9 @@ const projectsQuery = graphql`
 					modifiedTime
 					childMdx {
 						frontmatter {
+							pageDescription
 							pageTitle
 						}
-						excerpt
 						slug
 					}
 				}
@@ -62,15 +62,15 @@ const extractProjects = ({allFile: {edges}}: ProjectQuery): ProjectInfo[] => edg
 			modifiedTime,
 			childMdx:{
 				slug = '',
-				excerpt = '',
 				frontmatter: {
+					pageDescription = '',
 					pageTitle = '',
 				} = {}
 			} = {}
 		}
 	}) => ({
 		slug,
-		excerpt,
+		pageDescription,
 		pageTitle,
 		modifiedTime
 	})

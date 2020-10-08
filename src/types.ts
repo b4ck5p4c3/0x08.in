@@ -30,24 +30,27 @@ export type Frontmatter = {
 	covers: boolean;
 };
 
+export type File = {
+	sourceInstanceName: string;
+}
 export type PageContext = {
   frontmatter: Frontmatter;
 };
 export type InjectedProps = {
 	pageContext: PageContext;
 };
-
 export type Site = {
 	siteMetadata: SiteMetadata; 
 }
 export type MetadataQuery = {
 	site: Site;
+	file: File;
 }
+export type CommonProps = Site & File & InjectedProps;
 
-
+/** Event List Types */
 export type EventMdx = {
 	frontmatter: Frontmatter;
-	excerpt: string;
 	slug: string;
 };
 export type EventEdge = {
@@ -63,12 +66,11 @@ export type EventsQuery = {
 }
 export type EventInfo = {
 	slug: string;
-	excerpt: string;
 } & Partial<Frontmatter>;
 
+/** Project List Types */
 export type ProjectMdx = {
 	frontmatter: Frontmatter;
-	excerpt: string;
 	slug: string;
 };
 export type ProjectEdge = {
@@ -85,6 +87,5 @@ export type ProjectQuery = {
 }
 export type ProjectInfo = {
 	slug: string;
-	excerpt: string;
 	modifiedTime: string;
 } & Partial<Frontmatter>;

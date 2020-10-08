@@ -27,21 +27,42 @@ const mdxComponents = {
   pre: Pre
 };
 
-export default ({children, ...rest}: Props) => (
+export default ({children, ...props}: Props) => (
   <StaticQuery
     query={metadataQuery}
-    render={({site}: MetadataQuery) => (
-      <MDXProvider components={mdxComponents}>
-        <Head {...site} {...rest} />
-        <Header {...site} {...rest} />
-        <Page>
-          <Content {...site} {...rest}  >
-            {children}
-          </Content>
-        </Page>
-        <Footer {...site} {...rest} />
-      </MDXProvider>
-    )}
+    render={({...query}: MetadataQuery) => {
+      const {
+        pageContext
+      } = props;
+
+      const {
+        site: {
+          siteMetadata
+        },
+        file: {
+          sourceInstanceName
+        }
+      } = query;
+
+      const commonProps = {
+        pageContext,
+        siteMetadata,
+        sourceInstanceName
+      };
+
+      return (
+        <MDXProvider components={mdxComponents}>
+          <Head {...commonProps} />
+          <Header {...commonProps} />
+          <Page>
+            <Content {...commonProps} >
+              {children}
+            </Content>
+          </Page>
+          <Footer {...commonProps} />
+        </MDXProvider>
+      );
+    }}
   />
 );
 
@@ -59,6 +80,9 @@ const metadataQuery = graphql`
         postalCode
         email
       }
+    }
+    file {
+      sourceInstanceName
     }
     allMdx {
       edges {

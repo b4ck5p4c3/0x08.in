@@ -1,6 +1,6 @@
 import {ReactChild} from 'react';
-import {InjectedProps} from '../../types';
+import {CommonProps} from '../../types';
 
-export type Props = {
+export type Props = CommonProps & {
 	children?: ReactChild;
-} & InjectedProps;
+};

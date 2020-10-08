@@ -22,10 +22,10 @@ const EventTitle = styled.h2`
 	margin: 1rem 0;
 `;
 
-export default ({startDate, pageTitle, excerpt, slug}: Props) => (
+export default ({startDate, pageTitle, pageDescription, slug}: Props) => (
 	<Wrapper>
 		<EventDate>{startDate}</EventDate>
 		<EventTitle><Link to={slug}>{pageTitle}</Link></EventTitle>
-		<div>{excerpt}</div>
+		<div>{pageDescription}</div>
 	</Wrapper>
 );

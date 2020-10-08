@@ -1,4 +1,3 @@
-import {InjectedProps, Site} from '../../types';
+import {CommonProps} from '../../types';
 
-export type Props = Site & InjectedProps;
-
+export type Props = CommonProps;

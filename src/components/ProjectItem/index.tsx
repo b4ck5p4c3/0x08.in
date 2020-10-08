@@ -13,9 +13,9 @@ const ProjectTitle = styled.h2`
 	margin: 1rem 0;
 `;
 
-export default ({pageTitle, excerpt, slug}: Props) => (
+export default ({pageTitle, pageDescription, slug}: Props) => (
 	<Wrapper>
 		<ProjectTitle><Link to={slug}>{pageTitle}</Link></ProjectTitle>
-		<div>{excerpt}</div>
+		<div>{pageDescription}</div>
 	</Wrapper>
 );
