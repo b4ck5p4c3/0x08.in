@@ -41,6 +41,7 @@ export const Line = styled.span`
   min-width: var(--width-line-number);
   border-left: 1px solid transparent;
   padding: var(--padding-section);
+  font-size: var(--font-size-s);
   color: var(--typo-tertiary);
   user-select: none;
   cursor: pointer;

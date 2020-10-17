@@ -33,7 +33,7 @@
 article {
 	font-family: 'Roboto Mono', 'monospace';
   font-variation-settings: 'wght' 300;
-  font-size: var(--font-size);
+  font-size: var(--font-size-m);
 }
 
 h1,

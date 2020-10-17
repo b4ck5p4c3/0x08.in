@@ -26,7 +26,7 @@ export default ({children, pageContext, sourceInstanceName}: Props) => {
   } = pageContext;
 
   const hasAnchors = Boolean(anchors);
-
+  
   return (
     <Content>
       <Heading

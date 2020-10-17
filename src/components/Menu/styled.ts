@@ -7,7 +7,9 @@ export const Wrapper = styled.nav`
 	align-items: end;
 	font-weight: 300;
 	line-height: 20px;
+	overflow-y: scroll;
 	flex-direction: row;
+	scrollbar-width: none;
 	font-family: Helvetica, sans-serif;
 `;
 

@@ -8,17 +8,26 @@ import pageIcon from '../../assets/img/text-icon-black.png';
 
 import {Wrapper, Item, PageIcon, CrossIcon} from './styled'; 
 
-export default () => (
-	<Wrapper>
-		{
-			MENU_ITEMS.map((item: MenuItem) => (
-				<Item {...item} >
-					<PageIcon src={pageIcon} />
-					{item.key}
-					<CrossIcon src={corssIcon} />
-				</Item>
-			))
-		}
-	</Wrapper>
-);
+const ACTIVE_CLASS_NAME = 'activePage';
+
+export default () => {
+	React.useEffect(() => {
+		const active = document.getElementsByClassName(ACTIVE_CLASS_NAME)[0];
+		active && active.scrollIntoView(false);
+	}, []);
+
+	return (
+		<Wrapper>
+			{
+				MENU_ITEMS.map((item: MenuItem) => (
+					<Item {...item} activeClassName={ACTIVE_CLASS_NAME} >
+						<PageIcon src={pageIcon} />
+						{item.key}
+						<CrossIcon src={corssIcon} />
+					</Item>
+				))
+			}
+		</Wrapper>
+	);
+};
 

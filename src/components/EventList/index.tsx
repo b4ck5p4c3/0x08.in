@@ -8,7 +8,7 @@ import EventItem from '../EventItem';
 import {EVENT_DATE_FORMAT} from '../../constants';
 import {EventsQuery, EventInfo} from '../../types';
 
-const List = styled.section`
+const List = styled.div`
 	margin-top: 2rem;
 `;
 

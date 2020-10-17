@@ -7,10 +7,9 @@ import {Props} from './types';
 
 const Heading = styled.section<{hasAnchors: boolean}>`
   background-color: var(--theme-dark-bg-slightly);
-  padding-bottom: 15px;
+	padding: 10px 10px 25px 25px;
   margin-bottom: 20px;
-  padding-left: 30px;
-  padding-top: 10px;
+  
 `;
 
 const Title = styled.h1`
