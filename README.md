@@ -49,3 +49,9 @@ docker run --rm -p 8080:4000 -v `pwd`:/jekyll b4cksp4ce/ghpages
 ```
 
 Сайт будет доступен по адресу http://localhost:8080/
+
+## Лицензия
+
+![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
