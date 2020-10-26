@@ -1,7 +1,7 @@
 ---
 
 layout: event
-title: Computational art workshop: GLSL
+title: Computational art workshop - GLSL
 date: 28.10.2020 19:00
 event_description: Обзор OpenGL пайплайна, программирование fragment shaders
 end_date: 28.10.2020 22:00
