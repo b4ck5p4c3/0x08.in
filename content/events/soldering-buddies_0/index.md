@@ -1,5 +1,5 @@
 ---
-pageTitle: Soldering buddies 0
+pageTitle: 'Soldering buddies #0'
 pageKeywords: мастер-класс, пайка, уроки пайки, как паять, научиться паять
 startDate: 05.02.2020 19:30
 ---
