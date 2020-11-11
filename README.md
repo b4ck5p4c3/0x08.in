@@ -13,8 +13,6 @@
 
 > **Важно!** В разных частях проекта используются разные технологии, подходы к написанию кода и к добавлению содержимого! Подробности – в README и CONTRIBUTING файлах основных поддиректорий.
 
-![github pages](https://github.com/b4ck5p4c3/0x08.in/workflows/github%20pages/badge.svg?branch=feature%2Fnew-site)
-
 ## Как поднять это локально? 
 
 ```shell
