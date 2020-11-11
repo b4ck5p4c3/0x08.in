@@ -35,3 +35,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           destination_dir: new-site
           publish_dir: ./public
+          cname: 0x08.in
