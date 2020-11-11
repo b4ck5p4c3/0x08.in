@@ -4,9 +4,11 @@
 
 Сайт доступен на публичном домене 0x08.in с помощью  GitHub Pages. Исходный код проекта, содержимое страниц и связанные с ними файлы находятся в ветке `dev`.
 
-Контент добавляется в виде [.md и .mdx](https://mdxjs.com/getting-started) файлов, а код компонентов страниц и обвязки пишется на TypeScript с использованием  Styled Components и GraphQL.
+Типовой контент добавляется в виде [.md и .mdx](https://mdxjs.com/getting-started) файлов, а код компонентов страниц и обвязки пишется на TypeScript с использованием Styled Components и GraphQL.
 
 Дистрибутив проекта собирается с помощью [Gatsby.js](https://www.gatsbyjs.com/docs/) и [автоматически публикуется](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/#deploying-to-a-github-pages-subdomain-at-githubio) в ветку `master`.
+
+Для работы с проектом требуется [node js](https://nodejs.org) версии 12 и выше.
 
 > **Важно!** В разных частях проекта используются разные технологии, подходы к написанию кода и к добавлению содержимого! Подробности – в README и CONTRIBUTING файлах основных поддиректорий.
 
@@ -30,9 +32,26 @@ Your site is now running at http://localhost:8000
 
 ```
 
-После этого можно открывать локальный сайт и разрабатывать. Изменения в файлах автоматически обновят страницы с помощью [HMR](https://webpack.js.org/concepts/hot-module-replacement/).
+После этого можно открывать локальный сайт и разрабатывать %)
 
-В режиме разработки (по умолчанию) на `http://localhost:8000/___graphql` можно поиграться с данными сайта через GraphQL API (см. [Gatsby GraphQL Tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql))
+Изменения в `.ts` и `.tsx` файлах автоматически обновят страницы с помощью [HMR](https://webpack.js.org/concepts/hot-module-replacement/).
+
+Всё же порой, когда добавляются новые `.md` файлы или изображения, в бразуере появляются ошибки. Скорее всего это означает, что внесёные изменения требут пересборки. Для наилучшего результата будет полезно запустить свежую сборку, без кэша:
+
+```shell
+
+# Сборка без кэша проиходит дольше обычной
+npm run fresh
+
+# Дождитесь окончания:
+
+Your site is now running at http://localhost:8000
+
+...
+
+```
+
+В режиме разработки (он используется по умолчанию) по адресу `http://localhost:8000/___graphql` можно поиграться с данными сайта через GraphQL API (см. [Gatsby GraphQL Tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql))
 
 ## Файловая структура проекта
 
@@ -62,6 +81,8 @@ Your site is now running at http://localhost:8000
 - **`content/projects`** - страницы проектов
 - **`content/wiki`** - содержимое Wiki спэйса
 
+> Подробнее о том как работать с файлами директории `content/` смотрите во вложенных `README.md`  
+
 ### Статика
 
 - **`static/CNAME`** - доменное имя для GitHub Pages
@@ -78,7 +99,7 @@ Your site is now running at http://localhost:8000
 
 Остальные файлы можно считать служебными и без предварительного изучения документации технологий их лучше не трогать.
 
-## Технологии
+## Используемые технологии
 
 - [ESLint](https://eslint.org/) с [конфигом](https://www.npmjs.com/package/eslint-config-airbnb) Airbnb
 - [Gatsby MDX](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-mdx) для JSX в Markdown

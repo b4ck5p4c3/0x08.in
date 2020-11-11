@@ -21,17 +21,18 @@
     "url": "https://github.com/b4ck5p4c3/0x08.in/issues"
   },
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "concurrently --kill-others \"npm run develop\"",
-    "fresh": "npm run clean && concurrently --kill-others \"npm run develop\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "build": "npm run build:gatsby",
-    "build:gatsby": "gatsby build",
-    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "develop": "gatsby develop",
     "check-types": "tsc --noEmit",
+    "build:gatsby": "gatsby build",
+    "build": "npm run build:gatsby",
     "format": "prettier --write src/**/*.{ts,tsx}",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "deploy": "npm run build && gh-pages -d public",
+    "start": "concurrently --kill-others \"npm run develop\"",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "fresh": "npm run clean && concurrently --kill-others \"npm run develop\"",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.16",
@@ -79,6 +80,7 @@
     "eslint-plugin-prefer-object-spread": "^1.2.1",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
+    "gh-pages": "^3.1.0",
     "prettier": "^1.18.2",
     "react-markdown": "^4.0.8",
     "typescript": "^3.6.3"
