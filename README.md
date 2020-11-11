@@ -9,7 +9,7 @@
 
 Дистрибутив проекта собирается с помощью [Gatsby.js](https://www.gatsbyjs.com/docs/) и [автоматически публикуется](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/#deploying-to-a-github-pages-subdomain-at-githubio) в ветку `master`.
 
-Для работы с проектом требуется [node js](https://nodejs.org) версии 12 и выше.
+Для работы с проектом требуется [node js](https://nodejs.org) версии 12+.
 
 > **Важно!** В разных частях проекта используются разные технологии, подходы к написанию кода и к добавлению содержимого! Подробности – в README и CONTRIBUTING файлах основных поддиректорий.
 
