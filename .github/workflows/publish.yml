@@ -3,7 +3,7 @@ name: Publish
 on:
   push:
     branches:
-      - feature/new-site
+      - dev
 
 jobs:
   deploy:
@@ -33,4 +33,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: test
+          publish_branch: master
