@@ -1,0 +1,96 @@
+/**
+* Resets browser styles and apply few initial tweaks
+*/
+
+@font-face {
+  font-family: "Special Elite";
+	src:
+		url('../fonts/Special Elite.woff2') format('woff2'),
+		url('../fonts/Special Elite.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+	src:
+		url('../fonts/Roboto Mono.ttf') format('truetype');;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:focus {
+	outline:none;
+}
+
+article {
+	font-family: 'Roboto Mono', 'monospace';
+  font-variation-settings: 'wght' 300;
+  font-size: var(--font-size-m);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-variation-settings: 'wght' 333;
+	line-height: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+b,
+strong {
+	font-variation-settings: 'whgt' 333;
+} 
+
+ul,
+ol {
+	margin-top: -0.5rem;
+	margin-bottom: 1rem;
+	padding-left: 2rem;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+
+hr {
+	background: var(--theme-dark-bg-slightly);
+	margin: 1rem 0;
+	height: 0.2rem;
+	border: none;
+}
+
+blockquote {
+	margin: 10px;
+	padding: 15px;
+	background-color: var(--theme-dark-bg-slightly);
+	border-left: 2px solid var(--theme-dark-bg-highlighter)
+}
+
+code {
+	background-color: var(--theme-dark-bg-highlighter);
+	font-family: 'Roboto Mono', monospace;
+	font-variation-settings: 'wght' 200;
+	border-radius: 2px;
+	line-height: 2rem;
+	padding: 2px 4px;
+	font-size: 14px;
+}
