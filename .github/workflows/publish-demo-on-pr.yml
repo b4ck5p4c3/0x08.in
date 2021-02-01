@@ -1,0 +1,112 @@
+name: "Publish demo for Pull Requests"
+
+on:
+  pull_request:
+    types: [opened, synchronize, closed]
+
+jobs:
+  demo:
+    runs-on: ubuntu-18.04
+    steps:
+
+      # Configure AWS CLI to access Yandex Cloud
+      - name: "Configure S3 credentials"
+        env: 
+          YC_KEY_ID: ${{ secrets.YC_KEY_ID }}
+          YC_KEY_SECRET: ${{ secrets.YC_KEY_SECRET }}
+        run: |
+          mkdir -p ~/.aws && 
+          echo -e "[default]\naws_access_key_id=${YC_KEY_ID}\naws_secret_access_key=${YC_KEY_SECRET}\nregion=ru-central1" > ~/.aws/config
+
+      # Create a bucket
+      # Only when PR is opened
+      - name: "Create S3 bucket"
+        if: ${{ github.event.action == 'opened' }}
+        env:
+          PR_NUMBER: ${{ github.event.number }}
+        run: |
+          aws --endpoint-url=https://storage.yandexcloud.net s3api create-bucket --acl=public-read --bucket="b4cksp4ce-staticdemo-${PR_NUMBER}" &&
+          aws --endpoint-url=https://storage.yandexcloud.net s3 website "b4cksp4ce-staticdemo-${PR_NUMBER}" --index-document index.html --error-document index.html
+
+      # Delete bucket
+      # Only when PR is closed
+      - name: "Delete S3 bucket"
+        if: ${{ github.event.action == 'closed' }}
+        env:
+          PR_NUMBER: ${{ github.event.number }}
+        run: |
+          aws --endpoint-url=https://storage.yandexcloud.net s3 rb "s3://b4cksp4ce-staticdemo-${PR_NUMBER}" --force
+
+      # Checkout source code
+      # Only when PR is opened or synchronize
+      - uses: actions/checkout@v2
+        if: ${{ github.event.action == 'opened' || github.event.action == 'synchronize' }}
+
+      # Setup Node.js environment
+      # Only when PR is opened or synchronize
+      - name: "Setup Node"
+        uses: actions/setup-node@v2.1.4
+        if: ${{ github.event.action == 'opened' || github.event.action == 'synchronize' }}
+        with:
+          node-version: '14.x'
+
+      # Cache build dependencies
+      # Only when PR is opened or synchronize
+      - name: "Cache dependencies"
+        uses: actions/cache@v2
+        if: ${{ github.event.action == 'opened' || github.event.action == 'synchronize' }}
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # Build static content
+      # Only when PR is opened or synchronize
+      - name: "Build static content"
+        if: ${{ github.event.action == 'opened' || github.event.action == 'synchronize' }}
+        run: |
+          npm ci &&
+          npm run format &&
+          npm run build
+
+      # Deploy built content
+      # Only when PR is opened or synchronize
+      - name: "Deploy static content"
+        if: ${{ github.event.action == 'opened' || github.event.action == 'synchronize' }}
+        env:
+          PR_NUMBER: ${{ github.event.number }}
+        run: |
+          aws --endpoint-url=https://storage.yandexcloud.net s3 sync public "s3://b4cksp4ce-staticdemo-${PR_NUMBER}"
+
+      # Send a "bucket created" message if PR is opened
+      - name: "Comment about bucket creation"
+        uses: mshick/add-pr-comment@v1
+        if: ${{ github.event.action == 'opened' }}
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: 'github-actions[bot]'
+          allow-repeats: false
+          message: |
+            Я тут развернул демо для этого пулл-реквеста, чек ит аут ✨
+            https://b4cksp4ce-staticdemo-${{ github.event.number }}.website.yandexcloud.net
+
+      # Send a "bucket updated" message if PR is synchronized
+      - name: "Comment about bucket update"
+        uses: mshick/add-pr-comment@v1
+        if: ${{ github.event.action == 'synchronize' }}
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: 'github-actions[bot]'
+          allow-repeats: false
+          message: Обновил [демо](https://b4cksp4ce-staticdemo-${{ github.event.number }}.website.yandexcloud.net) 🎉
+
+      # Send a "bucket removed" message if PR is closed
+      - name: "Comment about bucket remove"
+        uses: mshick/add-pr-comment@v1
+        if: ${{ github.event.action == 'closed' }}
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: 'github-actions[bot]'
+          allow-repeats: false
+          message: Демо бакет удалён. So long, and thanks for all the fish 🐬
