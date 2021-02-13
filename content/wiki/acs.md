@@ -32,7 +32,7 @@ pageDescription: Устройство системы контроля досту
 ## Устройства Modbus
 
 ### RemoteIO: плата Kviver Endpointpp
-**Схема:** [rev.1](/wiki/acs/assets/endpointpp_rev_1.pdf)
+**Схема:** [rev.1](/assets/endpointpp_rev_1.pdf)
 
 **Прошивка:** [b4ck5p4c3/asc_endpointpp](https://github.com/b4ck5p4c3/asc_endpointpp)
 
