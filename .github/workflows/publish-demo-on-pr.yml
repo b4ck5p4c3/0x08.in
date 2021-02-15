@@ -7,6 +7,9 @@ on:
 jobs:
   demo:
     runs-on: ubuntu-18.04
+    
+    # Execute only if "base" and "head" repos are the same
+    if: ${{ github.event.pull_request.base.repo.full_name == github.event.pull_request.head.repo.full_name }}
     steps:
 
       # Configure AWS CLI to access Yandex Cloud
@@ -24,9 +27,7 @@ jobs:
         if: ${{ github.event.action == 'opened' }}
         env:
           PR_NUMBER: ${{ github.event.number }}
-          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
-          echo "$GITHUB_CONTEXT" && exit 1  &&
           aws --endpoint-url=https://storage.yandexcloud.net s3api create-bucket --acl=public-read --bucket="b4cksp4ce-staticdemo-${PR_NUMBER}" &&
           aws --endpoint-url=https://storage.yandexcloud.net s3 website "b4cksp4ce-staticdemo-${PR_NUMBER}" --index-document index.html --error-document index.html
 
