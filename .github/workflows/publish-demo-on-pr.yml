@@ -24,7 +24,9 @@ jobs:
         if: ${{ github.event.action == 'opened' }}
         env:
           PR_NUMBER: ${{ github.event.number }}
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
+          echo "$GITHUB_CONTEXT" && exit 1  &&
           aws --endpoint-url=https://storage.yandexcloud.net s3api create-bucket --acl=public-read --bucket="b4cksp4ce-staticdemo-${PR_NUMBER}" &&
           aws --endpoint-url=https://storage.yandexcloud.net s3 website "b4cksp4ce-staticdemo-${PR_NUMBER}" --index-document index.html --error-document index.html
 
