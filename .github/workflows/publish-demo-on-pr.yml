@@ -7,6 +7,9 @@ on:
 jobs:
   demo:
     runs-on: ubuntu-18.04
+    
+    # Execute only if "base" and "head" repos are the same
+    if: ${{ github.event.pull_request.base.repo.full_name == github.event.pull_request.head.repo.full_name }}
     steps:
 
       # Configure AWS CLI to access Yandex Cloud
