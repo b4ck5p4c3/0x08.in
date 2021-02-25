@@ -12,7 +12,7 @@ pageDescription: Устройство системы контроля досту
   - Получен запрос от администратора внутреннего Telegram-чата
   - Выполнена команда управления через SSH
 
-Освещение в аквариуме и портале управляется датчиками на дверях.
+Освещение в аквариуме и портале управляется датчиками на дверях. Помимо этого освещение в аквариуме используется как индикация успешной авторизации в RFID-ридере.
 
 Состояние "presence switch/переключателя присуствия" отображается на вывеске и в Telegram-боте.
 
@@ -27,7 +27,14 @@ pageDescription: Устройство системы контроля досту
 ### Обзорная схема программной части на контроллере шины.
 <iframe frameborder="0" style="width:100%;height:304px;" src="https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=BKSP_ACS_SW.drawio#R7VnbctowEP0aZtoHMr4DjwmQtNOkkzZJGx6FLdtqbC%2BRZS79%2Bsq2fMMEaAdizJTkQXu0Wgvt7jkCOurQX95QNHPvwMJeR5GsZUcddRRF1hSlE%2F9L1ipFdG2QAg4llnAqgAfyGwtQEmhELBxWHBmAx8isCpoQBNhkFQxRCouqmw1e9akz5OAa8GAir47%2BJBZzU7SvSwX%2BCRPHFU%2FWJDHho8xXAKGLLFiUIHXcUYcUgKUjfznEXnx22bGk667fmM33RXHA9llwYzLPdRbqCIE7cT9%2FCZ5%2BjLuG2BtbZe8XW%2FztCxMoc8GBAHnjAr2iEAUWjqNK3Cp8bgFmHJQ5%2BAszthK5RBEDDrnM98QsXhL2XBpP4lAXurBGSxE5MVaZETC6ei4bpVWxWSxLrGydDQETG5HTWesyrgpuBxDgFLkmnif80%2FOID%2BHNYxZQCBE18ZazzaoVUQezLX5qXgy8iTD4mO%2Bfr6PYQ4zMq%2FtAopqd3K%2FIOB%2BIpP9FAfTTuHPkReJJTVREC7LUazJL8oYsGR7f7tWUD5x4wJl3GoXK3bfHx3yOZpMZwh8%2BXcdir1K6jdcoZqQkJd0wyckld5Cl2bKYzGJMNfNFn2kmL%2BFrZIZdP92E%2F8pYrYyqRbJwCcMPM5TkZsGlY3tB2Dz3Q%2FCAJrFUC%2BG%2BbXI8ZBRecGnGMPt4auclMseU4eX2IqknVSzQND1dIqQr16RFIQRyRu9uSQQM6Uh1oP2n66MRgdIGulZ2E8E9hTkJCQQkcJpjglm2i3PkgUHTPKDWyuDp8jvnfelDKgMft5y6%2FA%2BnHtsillzPgq3HfxuzkLxEhBKevg6THWM9O8ae2dGOlZ3e7iYdmx7%2FAIO51x2ErxFhnHQ3duYRm8fum9jc2DzTvq7p0mHS09%2Btoeq79o4s1071HUW0EM5JWTd3iOhFLxfOSRZwi4ruUs31wjigig7acJ0e7G7QpKumXOIaUdAwf3rrxVMxTk08ZbWFBKC0hQDkfe%2FRzX6g3uMifQvmC9g297qPvBDRxi7TMSGAzRY8G2dACLJ0coSgnw4hyPsSQvVGIJ0wIWitIARtNyF8BQt3v49HZ3pTX1dqWW28MXstbMzW9KWxZ1%2BmrdFYYxpvNqZF5jXVze%2FvJg4QJRBu02iObYpxwK%2FB4ury%2BSmdxfdg6wShH48fuFn8MprMlX5eVsd%2FAA%3D%3D"></iframe>
 
-Организация на Github с репозиториями сервисов автоматизации: [github.com/b4ck5p4c3](https://github.com/b4ck5p4c3)
+Организация на Github с репозиториями сервисов автоматизации: [github.com/b4ck5p4c3](https://github.com/b4ck5p4c3):
+
+* Базовая инфраструктура и подробное описание: [acs software](https://github.com/b4ck5p4c3/acs/tree/master/software)
+	* Сервис инициализации контроллеров на шине: [acs-provision](https://github.com/b4ck5p4c3/acs-provision)
+	* Сценарии управления на базе node-red [acs-automation](https://github.com/b4ck5p4c3/acs-automation), а также [инструкции по работе с системой автоматизации](https://github.com/b4ck5p4c3/acs-automation/blob/development/guides/B4CKSP4CE.md)
+	* Приватный репозиторий с бэкапом конфига: [acs-secrets](https://github.com/b4ck5p4c3/acs-secrets)
+	* Утилиты для управления системой: [acs-misc](https://github.com/b4ck5p4c3/acs-misc)
+	* Транслятор [modbus2mqtt](https://github.com/b4ck5p4c3/acs-modbus2mqtt)
 
 ## Устройства Modbus
 
