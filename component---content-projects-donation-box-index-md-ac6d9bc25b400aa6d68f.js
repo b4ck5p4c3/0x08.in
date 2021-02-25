@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[34],{Qd9M:function(n,t,o){"use strict";o.r(t),o.d(t,"_frontmatter",(function(){return a})),o.d(t,"default",(function(){return u}));var e=o("zLVn"),r=(o("q1tI"),o("7ljp")),c=o("VXBa"),a={},p={_frontmatter:a},s=c.a;function u(n){var t=n.components,o=Object(e.a)(n,["components"]);return Object(r.b)(s,Object.assign({},p,o,{components:t,mdxType:"MDXLayout"}))}u.isMDXComponent=!0}}]);
+//# sourceMappingURL=component---content-projects-donation-box-index-md-ac6d9bc25b400aa6d68f.js.map
