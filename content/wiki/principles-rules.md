@@ -32,7 +32,7 @@ pageDescription: Правила и принципы сообщества
 ### Финансовая независимость
  - Сообщество финансово поддерживает Бэкспейс, но сам Бэкспейс не может быть источником прибыли. 
  - Финансовый вклад каждого никак не влияет на приоритет этого человека в принятии решений.
- - Обезличенная финансовая информация хранится в [Google Spreadsheet](https://drive.google.com/open?id=1axxo8_JOMkHQfMpo-TbR6vLCXhowdyu8iZRUjZ59F04).
+ - Обезличенная финансовая информация хранится в [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1DKUH18E3ZiV4sJcUvDNrL0xfBS5nIHbjtl-NkfMiCDQ).
 
 ## Правила
 
