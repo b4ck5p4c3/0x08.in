@@ -19,7 +19,6 @@ export const Anchor = styled.a`
 `;
 
 export const Elem = styled.div`
-  display: flex;
   padding: var(--padding-section);
   width: 100%;
 
