@@ -10,6 +10,7 @@ export const Wrapper = styled.header`
   top: 0;
   display: flex;
   position: sticky;
+  z-index: 10;
   justify-content: end;
   flex-direction: column;
   line-height: var(--line-height-header);
