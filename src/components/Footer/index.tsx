@@ -38,7 +38,7 @@ export default (props: Props) => (
 			<IconLink
 				src={liveIcon}
 				href={URLS.tgLive}
-				title='Подписаться на telegram-блог участников'
+				title='Подписаться на telegram-блог резидентов'
 			/>
 		</div>
 		<div>
