@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[53],{bUay:function(n,t,e){"use strict";e.r(t),e.d(t,"_frontmatter",(function(){return p})),e.d(t,"default",(function(){return b}));var o=e("zLVn"),r=(e("q1tI"),e("7ljp")),a=e("VXBa"),c=e("AEbr"),p={},s={_frontmatter:p},u=a.a;function b(n){var t=n.components,e=Object(o.a)(n,["components"]);return Object(r.b)(u,Object.assign({},s,e,{components:t,mdxType:"MDXLayout"}),Object(r.b)(c.a,{mdxType:"EventList"}))}b.isMDXComponent=!0}}]);
+//# sourceMappingURL=component---pages-events-mdx-121029c1ba04cdd53340.js.map
