@@ -70,7 +70,6 @@ jobs:
         if: ${{ github.event.action == 'opened' || github.event.action == 'synchronize' }}
         run: |
           npm ci &&
-          npm run format &&
           npm run build
 
       # Deploy built content
