@@ -8,9 +8,11 @@ export default function Layout({ children }) {
 
 Layout.getLayout = function getLayout(page: ReactElement) {
   return (
-    <main className={css.main}>
-      <Header />
-      {page}
-    </main>
+    <div className={css.container}>
+      <main className={css.main}>
+        <Header />
+        {page}
+      </main>
+    </div>
   );
 }
