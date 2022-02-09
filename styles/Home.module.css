@@ -1,0 +1,29 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 4rem 0;
+}
+
+.main li {
+
+  padding: .5rem 0;
+
+}
+
+.main li p {
+  margin-top: .25rem;
+}
+
+.main a {
+
+  color: blue;
+
+}
+
+.logo {
+  cursor: pointer;
+}

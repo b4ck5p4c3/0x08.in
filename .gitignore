@@ -1,13 +1,37 @@
-# project dependencies
-.cache
-node_modules
-yarn-error.log
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# build directory
-public/
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# generated folders
-coverage
+# testing
+/coverage
 
-# OS generated files
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
 .DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
