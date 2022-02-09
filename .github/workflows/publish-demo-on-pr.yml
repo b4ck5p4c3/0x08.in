@@ -79,7 +79,7 @@ jobs:
         env:
           PR_NUMBER: ${{ github.event.number }}
         run: |
-          aws --endpoint-url=https://storage.yandexcloud.net s3 sync public "s3://b4cksp4ce-staticdemo-${PR_NUMBER}"
+          aws --endpoint-url=https://storage.yandexcloud.net s3 sync build "s3://b4cksp4ce-staticdemo-${PR_NUMBER}"
 
       # Send a "bucket created" message if PR is opened
       - name: "Comment about bucket creation"
