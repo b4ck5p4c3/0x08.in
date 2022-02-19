@@ -97,12 +97,12 @@ const Home: NextPage = () => {
         <ul>
           <li>задонатить на <a href="https://sobe.ru/na/bksp">Собе.ру</a></li>
           <li>закинуть наличку в Donation Box</li>
-          <li>
+          {/* <li>
             задонатить что-нибудь из&nbsp;
             <Link href="/wishlist" passHref>
               <a>вишлиста</a>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </article>
 
