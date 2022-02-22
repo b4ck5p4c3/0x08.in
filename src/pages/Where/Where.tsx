@@ -9,6 +9,8 @@ const Where: NextPage = () => {
     <>
       <Head>
         <title>Как добраться • B4CKSP4CE</title>
+        <meta name="description" content="Информация о том, как добраться до Бэкспейса" />
+        <meta name="keywords" content="b4cksp4ce, backspace, бэкспейс, хакспейс, хакспейс спб" />
       </Head>
 
       <h1>Как добраться?</h1>
