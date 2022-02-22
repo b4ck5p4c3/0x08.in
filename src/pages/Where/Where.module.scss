@@ -1,0 +1,17 @@
+@import 'vars';
+
+.embedMap {
+  border: none;
+  border-radius: .5rem;
+  width: 100%;
+  min-height: 48rem;
+
+  @media (max-width: $break-mobile) {
+    min-height: 24rem;
+  }
+}
+
+.entrancePhoto {
+  border-radius: .5rem;
+  width: 100%;
+}
