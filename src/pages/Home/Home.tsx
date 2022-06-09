@@ -47,7 +47,7 @@ const Home: NextPage = () => {
           чтобы мы согласовали удобное всем время.
         </p>
         <p>
-          Бэкспейс – не закрытый клуб. Если вы разделяете наши принципы и хотите делать его вместе – станьте <a href="https://wiki.0x08.in/ru/101/roles">резидентом</a>.
+          Бэкспейс – не закрытый клуб. Если вы разделяете наши принципы и хотите делать его вместе – станьте <a href="https://wiki.0x08.in/share/9c609dd1-6fcc-47dc-94a4-734c88efecde/doc/roli-i-uchastie-EiakNMstP1">резидентом</a>.
         </p>
       </article>
 
@@ -85,7 +85,7 @@ const Home: NextPage = () => {
             <p>Safety first. Заботьтесь о безопасности себя и окружающих.</p>
           </li>
         </ol>
-        <p>Подробнее, в <a href="https://wiki.0x08.in/ru/101/rules-and-principles">B4CKSP4CE 101</a>. </p>
+        <p>Подробнее, в <a href="https://wiki.0x08.in/share/9c609dd1-6fcc-47dc-94a4-734c88efecde/doc/pravila-i-principy-krUVotITS9">B4CKSP4CE 101</a>. </p>
       </article>
 
       <article>
@@ -132,6 +132,7 @@ const Home: NextPage = () => {
             <a href="https://t.me/b4cksp4ce_issues">задачи</a>
           </li>
           <li>
+            <a href="https://wiki.0x08.in/share/9c609dd1-6fcc-47dc-94a4-734c88efecde">Вики</a>,&nbsp;
             <a href="https://github.com/b4ck5p4c3">Github</a>,&nbsp;
             <a href="https://matrix.to/#/#b4ck5p4c3:matrix.org">Matrix</a>
           </li>
