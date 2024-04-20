@@ -85,7 +85,7 @@ const Home: NextPage = () => {
             <p>Safety first. Заботьтесь о безопасности себя и окружающих.</p>
           </li>
         </ol>
-        <p>Подробнее в <a href="https://wiki.0x08.in/share/9c609dd1-6fcc-47dc-94a4-734c88efecde/doc/pravila-i-principy-krUVotITS9">B4CKSP4CE 101</a>. </p>
+        <p>Подробнее в <a href="https://wiki.0x08.in/s/public/doc/bksp-101-HvrtlzB32F">B4CKSP4CE 101</a>. </p>
       </article>
 
       <article>
@@ -97,7 +97,7 @@ const Home: NextPage = () => {
           Если вы хотите нас поддержать, можно:
         </p>
         <ul>
-          <li>задонатить на <a href="https://sobe.ru/na/bksp">Собе.ру</a></li>
+          <li>задонатить на <a href="https://yoomoney.ru/fundraise/MJbKegNfagI.230701">YooMoney</a></li>
           <li>закинуть наличку в Donation Box</li>
           {/* <li>
             задонатить что-нибудь из&nbsp;
@@ -132,15 +132,13 @@ const Home: NextPage = () => {
             <a href="https://t.me/b4cksp4ce_issues">задачи</a>
           </li>
           <li>
-            <a href="https://wiki.0x08.in/share/9c609dd1-6fcc-47dc-94a4-734c88efecde">Вики</a>,&nbsp;
-            <a href="https://github.com/b4ck5p4c3">Github</a>,&nbsp;
-            <a href="https://matrix.to/#/#b4ck5p4c3:matrix.org">Matrix</a>
+            <a href="https://wiki.0x08.in/">Wiki</a>,&nbsp;
+            <a href="https://github.com/b4ck5p4c3">GitHub</a>
           </li>
           <li>
             <a href="https://www.instagram.com/b4ck5p4ce">Instagram</a>,&nbsp;
             <a href="https://twitter.com/b4cksp4ce">Twitter</a>
           </li>
-          <li><a href="tel:78125079241">+7 (812) 507-92-41</a> на случай важных переговоров</li>
         </ul>
       </article>
     </>
