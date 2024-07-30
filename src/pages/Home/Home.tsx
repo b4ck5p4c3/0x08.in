@@ -136,6 +136,7 @@ const Home: NextPage = () => {
             <a href="https://github.com/b4ck5p4c3">GitHub</a>
           </li>
           <li>
+            <a href="https://www.youtube.com/@b4cksp4ce64">YouTube</a>,&nbsp;
             <a href="https://www.instagram.com/b4ck5p4ce">Instagram</a>,&nbsp;
             <a href="https://twitter.com/b4cksp4ce">Twitter</a>
           </li>
