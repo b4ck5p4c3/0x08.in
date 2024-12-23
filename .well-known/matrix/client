@@ -1,5 +1,9 @@
 {
   "m.homeserver": {
     "base_url": "https://matrix.app.0x08.in"
+  },
+  "org.matrix.msc2965.authentication": {
+    "issuer": "https://matrix.app.0x08.in/auth/",
+    "account": "https://matrix.app.0x08.in/auth/account"
   }
 }
