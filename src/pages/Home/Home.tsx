@@ -97,14 +97,8 @@ const Home: NextPage = () => {
           Если вы хотите нас поддержать, можно:
         </p>
         <ul>
-          <li>задонатить на <a href="https://yoomoney.ru/fundraise/MJbKegNfagI.230701">YooMoney</a></li>
+          <li>задонатить на <a href="https://yoomoney.ru/to/4100118928412413">YooMoney</a></li>
           <li>закинуть наличку в Donation Box</li>
-          {/* <li>
-            задонатить что-нибудь из&nbsp;
-            <Link href="/wishlist" passHref>
-              <a>вишлиста</a>
-            </Link>
-          </li> */}
         </ul>
       </article>
 
@@ -128,8 +122,9 @@ const Home: NextPage = () => {
             <span>Telegram: </span>
             <a href="https://t.me/b4cksp4ce_l1ve">блог</a>,&nbsp;
             <a href="https://t.me/b4ck5p4c3">анонсы</a>,&nbsp;
-            <a href="https://t.me/b4cksp4ce_chat">чат</a>,&nbsp;
-            <a href="https://t.me/b4cksp4ce_issues">задачи</a>
+            <a href="https://t.me/bksp_workgroups">рабочие группы</a>,&nbsp;
+            <a href="https://t.me/b4cksp4ce_chat">общий чат</a>,&nbsp;
+            <a href="https://t.me/b4cksp4ce_issues">обсуждения задач</a>
           </li>
           <li>
             <a href="https://wiki.0x08.in/">Wiki</a>,&nbsp;
