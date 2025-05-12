@@ -47,7 +47,7 @@ const Home: NextPage = () => {
           чтобы мы согласовали удобное всем время.
         </p>
         <p>
-          Бэкспейс – не закрытый клуб. Если вы разделяете наши принципы и хотите делать его вместе – станьте <a href="https://wiki.0x08.in/share/9c609dd1-6fcc-47dc-94a4-734c88efecde/doc/roli-i-uchastie-EiakNMstP1">резидентом</a>.
+          Бэкспейс – не закрытый клуб. Если вы разделяете наши принципы и хотите делать его вместе – станьте <a href="https://wiki.bksp.in/s/public/doc/roli-i-uchastie-EiakNMstP1">резидентом</a>.
         </p>
       </article>
 
