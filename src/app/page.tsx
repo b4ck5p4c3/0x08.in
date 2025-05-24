@@ -1,33 +1,26 @@
-import type { NextPage } from 'next'
-import Link from 'next/link';
-import Head from 'next/head';
+import Link from 'next/link'
 
-const Home: NextPage = () => {
+export default function Home () {
   return (
-    <>
-      <Head>
-        <title>B4CKSP4CE – Хакспейс в Санкт-Петербурге</title>
-        <meta name="description" content="Сообщество энтузиастов и энтузиасток, обьединённых вокруг технологий и искусства. Вместе мы разбираемся в сложных вещах, проводим события, работаем над проектами и просто хорошо проводим время." />
-        <meta name="keywords" content="b4cksp4ce, backspace, бэкспейс, хакспейс, хакспейс спб" />
-      </Head>
-
-      <h1>B4CKSP4CE</h1>
-      <article>
+    <article>
+      <header>
+        <h1>B4CKSP4CE</h1>
+      </header>
+      <section>
         <p>
-          Бэкспейс — это <a href="https://ru.wikipedia.org/wiki/Хакерспейс">хакспейс</a>.
+          Бэкспейс — это <a href='https://ru.wikipedia.org/wiki/Хакерспейс'>хакспейс</a>.
           Сообщество энтузиастов и энтузиасток, обьединённых вокруг технологий и искусства.
-          Вместе мы разбираемся в сложных вещах, проводим события, работаем над проектами и 
+          Вместе мы разбираемся в сложных вещах, проводим события, работаем над проектами и
           просто хорошо проводим время.
         </p>
         <p>
-          Наша миссия – развивать сообщество, в котором все смогут найти что-то для себя,
+          Наша миссия – развивать сообщество, в котором все смогут найти что-то для себя.
           Мы ломаем стены и строим мосты, помогая друг другу и сообществам вокруг нас.
         </p>
-      </article>
-
-      <article>
+      </section>
+      <section>
         <header>
-          <h2>Как с нами взаимодействовать</h2>
+          <h2>Как с нами взаимодействовать?</h2>
         </header>
         <p>
           Приходите к нам на события – мы проводим мастер-классы, лекции и встречи обо всем –
@@ -43,52 +36,50 @@ const Home: NextPage = () => {
           Резиденты занимаются Бэкспейсом в свободное время на чистом энтузиазме, поэтому у нас нет
           “дежурных” или “администраторов”. Мы очень любим гостей, но встречаем их только когда кто-то
           из резидентов готов это сделать. Собираясь заглянуть, напишите заранее в&nbsp;
-          <a href="https://t.me/b4cksp4ce_chat">чат</a>,
+          <a href='https://t.me/b4cksp4ce_chat'>чат</a>,
           чтобы мы согласовали удобное всем время.
         </p>
         <p>
-          Бэкспейс – не закрытый клуб. Если вы разделяете наши принципы и хотите делать его вместе – станьте <a href="https://wiki.bksp.in/s/public/doc/roli-i-uchastie-EiakNMstP1">резидентом</a>.
+          Бэкспейс – не закрытый клуб. Если вы разделяете наши принципы и хотите делать его вместе – станьте <a href='https://wiki.bksp.in/s/public/doc/roli-i-uchastie-EiakNMstP1'>резидентом</a>.
         </p>
-      </article>
-
-      <article>
+      </section>
+      <section>
         <header>
           <h2>Принципы</h2>
         </header>
         <p>Наше сообщество построено на нескольких принципах:</p>
         <ol>
           <li>
-            <b>Будьте прекрасны по отношению друг к другу</b>
+            <b>Будьте прекрасны по отношению друг к другу.</b>
             <p>Прислушивайтесь к мнению и потребностям друг друга.</p>
           </li>
           <li>
-            <b>Не притесняй и не мешай другим</b>
+            <b>Не притесняй и не мешай другим.</b>
             <p>Соблюдай личные границы других участников, старайся договариваться и кооперироваться.</p>
           </li>
           <li>
-            <b>Вкладывай больше, чем потребляешь</b>
+            <b>Вкладывай больше, чем потребляешь.</b>
             <p>
               Бэкспейс может развиваться только если сообщество делает его лучше.
               Мы не коворкинг и не обеспечиваем резидентов готовыми условиями для работы.
             </p>
           </li>
           <li>
-            <b>Финансовая независимость</b>
+            <b>Финансовая независимость.</b>
             <p>Бэкспейс не является источником прибыли, а финансовый вклад резидента не влияет на принятие решений.</p>
           </li>
           <li>
-            <b>Do-ocracy</b>
+            <b>Do-ocracy.</b>
             <p>Если хочешь, чтобы что-то изменилось – сделай это, но не забывай о других.</p>
           </li>
           <li>
-            <b>Запрещено умирать</b>
+            <b>Запрещено умирать.</b>
             <p>Safety first. Заботьтесь о безопасности себя и окружающих.</p>
           </li>
         </ol>
-        <p>Подробнее в <a href="https://wiki.0x08.in/s/public/doc/bksp-101-HvrtlzB32F">B4CKSP4CE 101</a>. </p>
-      </article>
-
-      <article>
+        <p>Подробнее в <a href='https://wiki.bksp.in/s/public/doc/bksp-101-HvrtlzB32F'>B4CKSP4CE 101</a>.</p>
+      </section>
+      <section>
         <header>
           <h2>Донейшн</h2>
         </header>
@@ -97,48 +88,45 @@ const Home: NextPage = () => {
           Если вы хотите нас поддержать, можно:
         </p>
         <ul>
-          <li>задонатить на <a href="https://yoomoney.ru/to/4100118928412413">YooMoney</a></li>
-          <li>закинуть наличку в Donation Box</li>
+          <li>Задонатить на <a href='https://yoomoney.ru/to/4100118928412413'>YooMoney</a>.</li>
+          <li>Закинуть наличку в Donation Box.</li>
         </ul>
-      </article>
-
-      <article>
+      </section>
+      <section>
         <header>
           <h2>Контакты</h2>
         </header>
         <ul>
           <li>
             СПб, Ланское шоссе, 14к1 (м. Черная речка) —&nbsp;
-            <a href="https://yandex.ru/maps/-/CCU5yWBvGD">Яндекс</a>,&nbsp;
-            <a href="https://go.2gis.com/nf715">2GIS</a>
+            <a href='https://yandex.ru/maps/-/CCU5yWBvGD'>Яндекс</a>,&nbsp;
+            <a href='https://go.2gis.com/nf715'>2GIS</a>
           </li>
           <li>
             Подробнее о том,&nbsp;
-            <Link href="/where" passHref>
-              <a>как до нас добраться</a>
-            </Link>&nbsp;
+            <Link href='/where'>
+              как до нас добраться
+            </Link>
           </li>
           <li>
             <span>Telegram: </span>
-            <a href="https://t.me/b4cksp4ce_l1ve">блог</a>,&nbsp;
-            <a href="https://t.me/b4ck5p4c3">анонсы</a>,&nbsp;
-            <a href="https://t.me/bksp_workgroups">рабочие группы</a>,&nbsp;
-            <a href="https://t.me/b4cksp4ce_chat">общий чат</a>,&nbsp;
-            <a href="https://t.me/b4cksp4ce_issues">обсуждения задач</a>
+            <a href='https://t.me/b4cksp4ce_l1ve'>блог</a>,&nbsp;
+            <a href='https://t.me/b4ck5p4c3'>анонсы</a>,&nbsp;
+            <a href='https://t.me/bksp_workgroups'>рабочие группы</a>,&nbsp;
+            <a href='https://t.me/b4cksp4ce_chat'>общий чат</a>,&nbsp;
+            <a href='https://t.me/b4cksp4ce_issues'>обсуждения задач</a>
           </li>
           <li>
-            <a href="https://wiki.0x08.in/">Wiki</a>,&nbsp;
-            <a href="https://github.com/b4ck5p4c3">GitHub</a>
+            <a href='https://wiki.bksp.in/'>Wiki</a>,&nbsp;
+            <a href='https://github.com/b4ck5p4c3'>GitHub</a>
           </li>
           <li>
-            <a href="https://www.youtube.com/@b4cksp4ce64">YouTube</a>,&nbsp;
-            <a href="https://www.instagram.com/b4ck5p4ce">Instagram</a>,&nbsp;
-            <a href="https://twitter.com/b4cksp4ce">Twitter</a>
+            <a href='https://youtube.com/@b4cksp4ce64'>YouTube</a>,&nbsp;
+            <a href='https://instagram.com/b4ck5p4ce'>Instagram</a>,&nbsp;
+            <a href='https://twitter.com/b4cksp4ce'>Twitter</a>
           </li>
         </ul>
-      </article>
-    </>
+      </section>
+    </article>
   )
 }
-
-export default Home;

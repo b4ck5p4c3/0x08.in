@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@layer base {
+  body {
+    @apply ~text-lg/xl
+  }
+
+  h1 {
+    @apply ~text-3xl/5xl font-bold
+  }
+
+  h2 {
+    @apply ~text-xl/3xl font-bold
+  }
+
+  h3 {
+    @apply text-xl font-bold
+  }
+
+  article {
+    @apply flex flex-col gap-12
+  }
+
+  section {
+    @apply flex flex-col gap-4
+  }
+
+  ol {
+    @apply list-decimal list-inside xl:list-outside
+  }
+
+  ul {
+    @apply list-inside
+  }
+
+  ul li::before {
+    content: '–';
+    padding-right: .5rem;
+  }
+
+  li {
+    @apply py-4
+  }
+
+  a {
+    @apply underline underline-offset-4 text-blue-600
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
