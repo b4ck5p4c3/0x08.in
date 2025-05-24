@@ -1,24 +1,34 @@
 {
   "name": "0x08.in",
+  "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export -o build",
+    "dev": "next dev --turbopack",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "sass": "^1.52.3",
-    "sharp": "^0.30.6"
+    "next": "15.1.8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@types/node": "17.0.41",
-    "@types/react": "18.0.12",
-    "eslint": "8.17.0",
-    "eslint-config-next": "12.1.6",
-    "typescript": "4.7.3"
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "fluid-tailwind": "^1.0.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "sharp",
+      "unrs-resolver"
+    ]
   }
 }
