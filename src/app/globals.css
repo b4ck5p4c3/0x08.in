@@ -1,43 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import 'tailwindcss';
 
 @layer base {
   body {
-    @apply ~text-lg/xl
+    font-size: clamp(1.125rem, 1.036rem + .223vw, 1.25rem);
+    line-height: 1.75rem;
   }
 
   h1 {
-    @apply ~text-3xl/5xl font-bold
+    @apply font-bold;
+    font-size: clamp(1.875rem, 1.071rem + 2.009vw, 3rem);
+    font-size: clamp(1.875rem, 1.071rem + 2.009vw, 3rem);
   }
 
   h2 {
-    @apply ~text-xl/3xl font-bold
-  }
-
-  h3 {
-    @apply text-xl font-bold
+    @apply font-bold;
+    font-size: clamp(1.25rem, .804rem + 1.116vw, 1.875rem);
+    line-height: clamp(1.75rem, 1.39rem + .89vw, 2.25rem);
   }
 
   article {
-    @apply flex flex-col gap-12
+    @apply flex flex-col gap-12;
   }
 
   section {
-    @apply flex flex-col gap-4
+    @apply flex flex-col gap-4;
   }
 
   ol {
-    @apply list-decimal list-inside xl:list-outside
+    @apply list-decimal list-inside xl:list-outside;
   }
 
   ul {
-    @apply list-inside
+    @apply list-inside;
   }
 
   ul li::before {
@@ -46,12 +40,21 @@
   }
 
   li {
+    @apply py-2
+  }
+
+  .list-spaced > li {
     @apply py-4
   }
 
   a {
     @apply underline underline-offset-4 text-blue-600
   }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {

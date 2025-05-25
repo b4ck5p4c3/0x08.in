@@ -1,8 +1,17 @@
 {
   "name": "0x08.in",
+  "description": "Landing page for B4CKSP4CE",
+  "author": {
+    "name": "B4CKSP4CE Team & Contributors",
+    "email": "info@0x08.in"
+  },
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "browserslist": [
+    "defaults"
+  ],
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -15,11 +24,11 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.7",
     "@types/node": "^22.15.21",
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
     "eslint": "^9.27.0",
-    "fluid-tailwind": "^1.0.4",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.7",
     "typescript": "^5.8.3"
@@ -27,6 +36,7 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
+      "@tailwindcss/oxide",
       "sharp",
       "unrs-resolver"
     ]
